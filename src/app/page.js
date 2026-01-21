@@ -1,65 +1,95 @@
-import Image from "next/image";
+
+import WarningLabelComp from "@/app/components/WarningLabelComp";
+import ScreenLayoutComp from "@/app/components/ScreenLayoutComp";
+import HeaderComp from "@/app/components/HeaderComp";
+import GenericContentComp from "@/app/components/GenericContentComp";
+import ProjectComp from "@/app/components/ProjectComp";
+
+
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    const categories = [
+        {name: "UI/UX Design", color: "#375823", text: "#B3D89C"},
+        {name: "Brand Development", color: "#186A77", text: "#98DFEA"},
+        {name: "Digital Media Management", color: "#121711", text: "#5C7457"},
+        {name: "Digital Marketing", color: "#1A2438", text: "#6883BA"},
+        {name: "Copywriting", color: "#0D0C1D", text: "#3D3B8E"},
+        {name: "Graphic Design", color: "#0D0C1D", text: "#3D3B8E"},
+
+    ];
+
+    const blogPosts = [
+        {
+            image: "",
+            title: "Authentic Beauty Concept",
+            description: "Brand spotlight: a study of Authentic Beauty Concept",
+            date: "01/01/01"
+        },
+        {
+            image: "",
+            title: "Colour of the Year",
+            description: "Brand spotlight: a study of Authentic Beauty Concept",
+            date: "01/01/01"
+        },
+        {
+            image: "",
+            title: "Kleinsky's",
+            description: "Brand spotlight: a study of Kleinsky's",
+            date: "01/01/01"
+        },
+
+    ]
+
+    const projects = [
+        {
+            image: "",
+            title: "Nourish",
+            description: "A speculative design project for a fictional client",
+            categories: ["Brand Development", "UI/UX Design", "Graphic Design"],
+            path: "/projects/nourish",
+        },
+    ];
+
+
+    return (
+        <main>
+            <div className="bg-black">
+                <WarningLabelComp></WarningLabelComp>
+                <ScreenLayoutComp leftComponent={<HeaderComp heading={"Portfolio"} subheading={"Brendon Kruger's"}/>}
+                                  rightComponent={<GenericContentComp
+                                      heading="About Me"
+                                      content={
+                                          <>
+                                              <p>Brendon is a UI/UX designer and front-end developer at Intelligent
+                                                  Elephant.io.</p>
+                                              <p>In 2024, she obtained an honours degree in Digital Art.</p>
+                                              <p>She is a creative and results-driven UX/UI Designer with 2 years of
+                                                  professional experience in user-centered and visual design across
+                                                  multiple platforms.</p>
+                                              <p>Skilled in collaborating with clients, developers, and cross-functional
+                                                  teams to deliver user-centric and aesthetically compelling design
+                                                  solutions.</p>
+                                              <p>Proficient in Notion, Figma, Adobe Creative Suite, and Sketch.</p>
+                                          </>
+                                      }
+                                  />
+
+                                  }/>
+
+
+                <div className={"grid-cols-5 grid gap-2 lg:mx-56 my-3 text-gray-400 text-center font-serif"}>
+                    <div className={"font-bold"}> UI/UX Design</div>
+                    <div> Brand Development</div>
+                    <div className={"font-bold"}> Digital Media Management</div>
+                    <div> Digital Marketing</div>
+                    <div className={"font-bold"}> Copywriting</div>
+                </div>
+                <div className={"mx-56 h-0.5 bg-gray-500 "}></div>
+                <ScreenLayoutComp
+                    leftComponent={<HeaderComp heading={"My Work"} subheading={""}/>}
+                    rightComponent={<ProjectComp projects={projects} categories={categories}/>}
+                />
+            </div>
+        </main>
+    );
 }
