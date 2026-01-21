@@ -13,7 +13,7 @@ export default function ProjectComp({ projects, categories }) {
     };
 
     return (
-        <div className="grid grid-cols-3 gap-6">
+        <div className="md:grid md:grid-cols-3 md:gap-6">
             {projects.map((project) => (
                 <Link
                     key={project.title}

@@ -55,6 +55,10 @@ export default function Home() {
         <main>
             <div className="bg-black">
                 <WarningLabelComp></WarningLabelComp>
+                <div className={"md:hidden"}>
+                    <div className={"text-construction-yellow m-3 font-serif"}>Please mind the dust! I'm building something beautiful!</div>
+                    <WarningLabelComp ></WarningLabelComp>
+                </div>
                 <ScreenLayoutComp leftComponent={<HeaderComp heading={"Portfolio"} subheading={"Brendon Kruger's"}/>}
                                   rightComponent={<GenericContentComp
                                       heading="About Me"
@@ -77,7 +81,7 @@ export default function Home() {
                                   }/>
 
 
-                <div className={"grid-cols-5 grid gap-2 lg:mx-56 my-3 text-gray-400 text-center font-serif"}>
+                <div className={"grid-cols-5 grid gap-2 lg:mx-56 mx-10 my-3 text-gray-400 text-center font-serif text-sm md:text-md lg:text-lg"}>
                     <div className={"font-bold"}> UI/UX Design</div>
                     <div> Brand Development</div>
                     <div className={"font-bold"}> Digital Media Management</div>
