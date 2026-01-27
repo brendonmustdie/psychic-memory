@@ -9,18 +9,14 @@ export default function ProjectComp({ projects, categories }) {
 
     const getCategoryTextColor = (name) => {
         const cat = categories.find(c => c.name === name);
-        return cat ? cat.text : "bg-gray-400";
+        return cat ? cat.text : "#000"; // fallback to black for text
     };
 
     return (
         <div className="md:grid md:grid-cols-3 md:gap-6">
             {projects.map((project) => (
-                <Link
-                    key={project.title}
-                    href={project.path}
-                    className="block"
-                >
-                    <div className="p-4 rounded bg-white text-black cursor-pointer hover:shadow-lg hover:-translate-y-1 transition">
+                <Link key={project.title} href={project.path}>
+                    <div className="block p-4 rounded bg-white text-black cursor-pointer hover:shadow-lg hover:-translate-y-1 transition">
                         <div className="font-bold text-lg text-black font-handwritten">
                             {project.title}
                         </div>
