@@ -16,6 +16,7 @@ export default function ProjectComp({ projects, categories }) {
         <div className="md:grid md:grid-cols-3 md:gap-6">
             {projects.map((project) => (
                 <Link key={project.title} href={project.path}>
+                    <a>
                     <div className="block p-4 rounded bg-white text-black cursor-pointer hover:shadow-lg hover:-translate-y-1 transition">
                         <div className="font-bold text-lg text-black font-handwritten">
                             {project.title}
@@ -40,6 +41,7 @@ export default function ProjectComp({ projects, categories }) {
                             ))}
                         </div>
                     </div>
+                    </a>
                 </Link>
             ))}
         </div>
