@@ -48,6 +48,13 @@ export default function Home() {
             categories: ["Brand Development", "UI/UX Design", "Graphic Design"],
             path: "/projects/nourish",
         },
+        {
+            image: "",
+            title: "Unmatched Deck",
+            description: "Illustrations I made for a custom card deck for a friend",
+            categories: ["Brand Development", "UI/UX Design", "Graphic Design"],
+            path: "/projects/unmatcheddeck",
+        },
     ];
 
 
