@@ -4,6 +4,7 @@ import ScreenLayoutComp from "@/app/components/ScreenLayoutComp";
 import HeaderComp from "@/app/components/HeaderComp";
 import GenericContentComp from "@/app/components/GenericContentComp";
 import ProjectComp from "@/app/components/ProjectComp";
+import XPComp from "@/app/components/XPComp";
 
 
 
@@ -15,6 +16,8 @@ export default function Home() {
         {name: "Digital Marketing", color: "#1A2438", text: "#6883BA"},
         {name: "Copywriting", color: "#0D0C1D", text: "#3D3B8E"},
         {name: "Graphic Design", color: "#0D0C1D", text: "#3D3B8E"},
+        {name: "Illustration", color: "#0D0C1D", text: "#3D3B8E"},
+        {name: "Digital Art", color: "#0D0C1D", text: "#3D3B8E"},
 
     ];
 
@@ -48,6 +51,13 @@ export default function Home() {
             categories: ["Brand Development", "UI/UX Design", "Graphic Design"],
             path: "/projects/nourish",
         },
+        {
+            image: "",
+            title: "Unmatched Deck",
+            description: "A speculative design project for a fictional client",
+            categories: ["Illustration", "Digital Art"],
+            path: "/projects/unmatcheddeck",
+        },
 
     ];
 
@@ -78,7 +88,6 @@ export default function Home() {
                                           </>
                                       }
                                   />
-
                                   }/>
 
 
@@ -93,6 +102,10 @@ export default function Home() {
                 <ScreenLayoutComp
                     leftComponent={<HeaderComp heading={"My Work"} subheading={""}/>}
                     rightComponent={<ProjectComp projects={projects} categories={categories}/>}
+                />
+                <ScreenLayoutComp
+                    leftComponent={<HeaderComp heading={"My Experience"} subheading={"Want to hire me?"}/>}
+                    rightComponent={<XPComp/>}
                 />
             </div>
         </main>

@@ -9,7 +9,7 @@ export default function ProjectComp({ projects, categories }) {
 
     const getCategoryTextColor = (name) => {
         const cat = categories.find(c => c.name === name);
-        return cat ? cat.text : "#000"; // fallback to black for text
+        return cat ? cat.text : "#000";
     };
 
     return (
