@@ -38,7 +38,7 @@ export default function BlogComp({ blogPosts = [] }) {
                     <span className="px-3 py-1 text-sm">
             Page {currentPage} of {totalPages}
           </span>
-
+svg
                     <button
                         onClick={() => setCurrentPage(p => Math.min(p + 1, totalPages))}
                         disabled={currentPage === totalPages}

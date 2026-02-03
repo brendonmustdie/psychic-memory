@@ -5,13 +5,14 @@ import HeaderComp from "@/app/components/HeaderComp";
 import GenericContentComp from "@/app/components/GenericContentComp";
 import ProjectComp from "@/app/components/ProjectComp";
 import XPComp from "@/app/components/XPComp";
+import PokerChipComp from "@/app/components/PokerChipComp";
 
 
 
 export default function Home() {
     const categories = [
         {name: "UI/UX Design", color: "#375823", text: "#B3D89C"},
-        {name: "Brand Development", color: "#186A77", text: "#98DFEA"},
+        {name: "Brand Dev", color: "#186A77", text: "#98DFEA"},
         {name: "Digital Media Management", color: "#121711", text: "#5C7457"},
         {name: "Digital Marketing", color: "#1A2438", text: "#6883BA"},
         {name: "Copywriting", color: "#0D0C1D", text: "#3D3B8E"},
@@ -48,8 +49,13 @@ export default function Home() {
             image: "",
             title: "Nourish",
             description: "A speculative design project for a fictional client",
-            categories: ["Brand Development", "UI/UX Design", "Graphic Design"],
+            categories: ["Brand Dev", "UI/UX Design", "Graphic Design"],
             path: "/projects/nourish",
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#dc2626"
+                       className="bi bi-suit-diamond-fill" viewBox="0 0 16 16">
+                <path
+                    d="M2.45 7.4 7.2 1.067a1 1 0 0 1 1.6 0L13.55 7.4a1 1 0 0 1 0 1.2L8.8 14.933a1 1 0 0 1-1.6 0L2.45 8.6a1 1 0 0 1 0-1.2"/>
+            </svg>
         },
         {
             image: "",
@@ -57,6 +63,11 @@ export default function Home() {
             description: "A speculative design project for a fictional client",
             categories: ["Illustration", "Digital Art"],
             path: "/projects/unmatcheddeck",
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                       className="bi bi-suit-spade-fill" viewBox="0 0 16 16">
+                <path
+                    d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907"/>
+            </svg>
         },
 
     ];
@@ -64,12 +75,24 @@ export default function Home() {
 
     return (
         <main>
-            <div className="bg-black">
                 <WarningLabelComp></WarningLabelComp>
+            <div className="bg-black">
                 <div className={"md:hidden"}>
-                    <div className={"text-construction-yellow m-3 font-serif"}>Please mind the dust! I'm building something beautiful!</div>
-                    <WarningLabelComp ></WarningLabelComp>
+                    <div className={"text-construction-yellow m-3 font-serif"}>Please mind the dust! I'm building
+                        something beautiful!
+                    </div>
+                    <WarningLabelComp></WarningLabelComp>
                 </div>
+                {/*<div className="flex flex-wrap gap-2 m-3">*/}
+                {/*    {categories.map((category, index) => (*/}
+                {/*        <PokerChipComp*/}
+                {/*            key={index}*/}
+                {/*            colour={category.color}*/}
+                {/*            text={category.name}*/}
+                {/*        />*/}
+                {/*    ))}*/}
+                {/*</div>*/}
+
                 <ScreenLayoutComp leftComponent={<HeaderComp heading={"Portfolio"} subheading={"Brendon Kruger's"}/>}
                                   rightComponent={<GenericContentComp
                                       heading="About Me"
@@ -91,18 +114,13 @@ export default function Home() {
                                   }/>
 
 
-                <div className={"grid-cols-5 grid gap-2 lg:mx-56 mx-10 my-3 text-gray-400 text-center font-serif text-sm md:text-md lg:text-lg"}>
-                    <div className={"font-bold"}> UI/UX Design</div>
-                    <div> Brand Development</div>
-                    <div className={"font-bold"}> Digital Media Management</div>
-                    <div> Digital Marketing</div>
-                    <div className={"font-bold"}> Copywriting</div>
+                <div className={""}>
+                    <ScreenLayoutComp
+                        leftComponent={<HeaderComp heading={"My Work"} subheading={""}/>}
+                        rightComponent={<ProjectComp projects={projects} categories={categories}/>}
+                    />
                 </div>
-                <div className={"mx-56 h-0.5 bg-gray-500 "}></div>
-                <ScreenLayoutComp
-                    leftComponent={<HeaderComp heading={"My Work"} subheading={""}/>}
-                    rightComponent={<ProjectComp projects={projects} categories={categories}/>}
-                />
+
                 <ScreenLayoutComp
                     leftComponent={<HeaderComp heading={"My Experience"} subheading={"Want to hire me?"}/>}
                     rightComponent={<XPComp/>}

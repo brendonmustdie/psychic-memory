@@ -7,15 +7,24 @@ export default function XPCardComp({
                                        company,
                                        startDate,
                                        endDate,
+    icon
                                    }) {
     return (
-        <div className="rounded-lg m-2 grid-cols-2 gap-4">
-            <div>{title}</div>
+        <div className="rounded bg-white p-4 m-2 text-black">
+            <div className={"flex flex-row gap-2"}>
+                <div className={"m-2"}>
+                    {icon}
+                   </div>
+
+                <div><div className={"font-bold text-xl"}>{title}</div>
+                    <div className={"font-bold"}>{company}</div></div></div>
+            <div className={"flex flex-row text-gray-400"}>
+
+                <div className={"italic"}>{startDate}</div>
+                <div className={"italic"}>{endDate}</div>
+            </div>
             <div>{description}</div>
-            <div>{startDate}</div>
-            <div>{endDate}</div>
             <div>{skills}</div>
-            <div>{company}</div>
         </div>
     );
 }
