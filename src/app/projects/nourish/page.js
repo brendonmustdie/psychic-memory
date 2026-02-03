@@ -13,7 +13,6 @@ export default function Page() {
             <WarningLabelComp></WarningLabelComp>
             <div className={"flex flex-row"}>
                 <HomeButtonComp></HomeButtonComp>
-                {/*<NextProjectComp></NextProjectComp>*/}
             </div>
 
 
