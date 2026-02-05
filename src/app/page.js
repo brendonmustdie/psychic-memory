@@ -118,8 +118,8 @@ export default function Home() {
                                       <div className={"flex flex-row"}>
                                           <Link href={"/aboutme"}><div className={"bg-red-900 p-2 rounded-full text-white font-bold font-serif m-2 hover:p-3"}> Get to Know Me </div>
                                           </Link>
-                                          {/*<Link href={"/myCV"}><div className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2 hover:p-3"}> Look at my CV  </div>*/}
-                                          {/*</Link>*/}
+                                          <Link href={"/myCV"}><div className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2 hover:p-3"}> Look at my CV  </div>
+                                          </Link>
                                       </div>
                                         }
 

@@ -10,7 +10,7 @@ export default function XPCardComp({
     icon
                                    }) {
     return (
-        <div className="rounded bg-white p-4 m-2 text-black">
+        <div className="rounded bg-white p-4 m-2 text-black font-serif">
             <div className={"flex flex-row gap-2"}>
                 <div className={"m-2"}>
                     {icon}
