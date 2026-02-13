@@ -6,6 +6,7 @@ import GenericContentComp from "@/app/components/GenericContentComp";
 import ProjectComp from "@/app/components/ProjectComp";
 import XPComp from "@/app/components/XPComp";
 import Link from "next/link";
+import FooterComp from "@/app/components/FooterComp";
 
 
 
@@ -86,8 +87,7 @@ export default function Home() {
 
     return (
         <main>
-                <WarningLabelComp></WarningLabelComp>
-            <div className="bg-black">
+            <div className="">
                 <div className={"md:hidden"}>
                     <div className={"text-construction-yellow m-3 font-serif"}>Please mind the dust! I'm building
                         something beautiful!
@@ -116,9 +116,9 @@ export default function Home() {
 
                                     buttons={
                                       <div className={"flex flex-row"}>
-                                          <Link href={"/aboutme"}><div className={"bg-red-900 p-2 rounded-full text-white font-bold font-serif m-2 hover:p-3"}> Get to Know Me </div>
+                                          <Link href={"/aboutme"}><div className={"bg-red-900 p-2 rounded-full text-white font-bold font-serif m-2 border-2 border-black hover:border-red-900"}> Get to Know Me </div>
                                           </Link>
-                                          <Link href={"/myCV"}><div className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2 hover:p-3"}> Look at my CV  </div>
+                                          <Link href={"/myCV"}><div className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> Look at my CV  </div>
                                           </Link>
                                       </div>
                                         }
@@ -139,6 +139,7 @@ export default function Home() {
                     rightComponent={<XPComp/>}
                 />
             </div>
+            <FooterComp></FooterComp>
         </main>
     );
 }

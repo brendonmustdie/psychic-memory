@@ -4,6 +4,7 @@ import GenericContentComp from "../components/GenericContentComp";
 import HomeButtonComp from "@/app/components/HomeButtonComp";
 import WarningLabelComp from "@/app/components/WarningLabelComp";
 import Image from "next/image";
+import FooterComp from "@/app/components/FooterComp";
 
 
 export default function Page() {
@@ -110,7 +111,7 @@ export default function Page() {
                     />
                 }
             />
-
+<FooterComp></FooterComp>
         </main>
     );
 }

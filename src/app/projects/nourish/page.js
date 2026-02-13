@@ -5,6 +5,7 @@ import Image from "next/image";
 import HomeButtonComp from "@/app/components/HomeButtonComp";
 import NextProjectComp from "@/app/components/NextProjectComp";
 import WarningLabelComp from "@/app/components/WarningLabelComp";
+import FooterComp from "@/app/components/FooterComp";
 
 
 export default function Page() {
@@ -120,7 +121,7 @@ export default function Page() {
                 <div className={"m-10"}> These are the weekly menu screens, as well as the mood selection screen. </div>
             </div>
 
-
+<FooterComp></FooterComp>
 
 
 

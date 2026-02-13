@@ -9,6 +9,7 @@ import Link from "next/link";
 import XPComp from "@/app/components/XPComp";
 import DividerComp from "@/app/components/DividerComp";
 import XPCardComp from "@/app/components/XPCardComp";
+import FooterComp from "@/app/components/FooterComp";
 
 export default function Page() {
 
@@ -181,7 +182,8 @@ export default function Page() {
                 <p>Professional Bachelor of Arts (Honours Equivalent) in Digital Arts</p>
 </div>
             </div>
-
+            <DividerComp></DividerComp>
+<FooterComp></FooterComp>
         </main>
     );
 }
