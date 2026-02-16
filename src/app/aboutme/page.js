@@ -95,7 +95,7 @@ export default function Page() {
                                     <div key={assistant.name} className="flex flex-col items-center w-48">
                                         <div className="relative w-48 h-48">
                                             <Image
-                                                src={`/images/${assistant.name}.jpeg`}
+                                                src={`/images/assistants/${assistant.name}.jpeg`}
                                                 alt={assistant.name}
                                                 fill
                                                 className="object-cover rounded-xl"

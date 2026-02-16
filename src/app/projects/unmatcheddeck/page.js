@@ -11,16 +11,16 @@ import ImageDisplayComp from "@/app/components/ImageDisplayComp";
 
 export default function Page() {
     const illustrations=[
-        {image: "/images/ElainesGetOut.png"},
-        {image: "/images/FrankBlocksThePath.png"},
-        {image: "/images/FrankWandersOff.png"},
-        {image: "/images/knight3.png"},
-        {image: "/images/pizzabox.png"},
-        {image: "/images/planted.png"},
-        {image: "/images/pruning.png"},
-        {image: "/images/resistTheUrge.png"},
-        {image: "/images/soup.png"},
-        {image: "/images/SurpriseBumSmack.png"},
+        {image: "/images/nature-unmatched/ElainesGetOut.png"},
+        {image: "/images/nature-unmatched/FrankBlocksThePath.png"},
+        {image: "/images/nature-unmatched/FrankWandersOff.png"},
+        {image: "/images/nature-unmatched/knight3.png"},
+        {image: "/images/nature-unmatched/pizzabox.png"},
+        {image: "/images/nature-unmatched/planted.png"},
+        {image: "/images/nature-unmatched/pruning.png"},
+        {image: "/images/nature-unmatched/resistTheUrge.png"},
+        {image: "/images/nature-unmatched/soup.png"},
+        {image: "/images/nature-unmatched/SurpriseBumSmack.png"},
 
     ]
     return (

@@ -3,7 +3,6 @@ import HeaderComp from "../../components/HeaderComp";
 import GenericContentComp from "../../components/GenericContentComp";
 import Image from "next/image";
 import HomeButtonComp from "@/app/components/HomeButtonComp";
-import NextProjectComp from "@/app/components/NextProjectComp";
 import WarningLabelComp from "@/app/components/WarningLabelComp";
 import FooterComp from "@/app/components/FooterComp";
 
@@ -84,7 +83,7 @@ export default function Page() {
                     style={{ paddingTop: '56.25%' }} // 16:9 ratio
                 >
                     <Image
-                        src="/images/1.png"
+                        src="/images/nourish/1.png"
                         alt="test"
                         fill
                         className="object-contain"
@@ -98,7 +97,7 @@ export default function Page() {
                     style={{ paddingTop: '56.25%' }} // 16:9 ratio
                 >
                     <Image
-                        src="/images/2.png"
+                        src="/images/nourish/2.png"
                         alt="test"
                         fill
                         className="object-contain"
@@ -112,7 +111,7 @@ export default function Page() {
                     style={{ paddingTop: '56.25%' }} // 16:9 ratio
                 >
                     <Image
-                        src="/images/3.png"
+                        src="/images/nourish/3.png"
                         alt="test"
                         fill
                         className="object-contain"
