@@ -11,16 +11,16 @@ import ImageDisplayComp from "@/app/components/ImageDisplayComp";
 
 export default function Page() {
     const illustrations=[
-        {image: "/images/nature-unmatched/ElainesGetOut.png"},
-        {image: "/images/nature-unmatched/FrankBlocksThePath.png"},
-        {image: "/images/nature-unmatched/FrankWandersOff.png"},
-        {image: "/images/nature-unmatched/knight3.png"},
-        {image: "/images/nature-unmatched/pizzabox.png"},
-        {image: "/images/nature-unmatched/planted.png"},
-        {image: "/images/nature-unmatched/pruning.png"},
-        {image: "/images/nature-unmatched/resistTheUrge.png"},
-        {image: "/images/nature-unmatched/soup.png"},
-        {image: "/images/nature-unmatched/SurpriseBumSmack.png"},
+        {image: "/images/nature_unmatched/ElainesGetOut.png"},
+        {image: "/images/nature_unmatched/FrankBlocksThePath.png"},
+        {image: "/images/nature_unmatched/FrankWandersOff.png"},
+        {image: "/images/nature_unmatched/knight3.png"},
+        {image: "/images/nature_unmatched/pizzabox.png"},
+        {image: "/images/nature_unmatched/planted.png"},
+        {image: "/images/nature_unmatched/pruning.png"},
+        {image: "/images/nature_unmatched/resistTheUrge.png"},
+        {image: "/images/nature_unmatched/soup.png"},
+        {image: "/images/nature_unmatched/SurpriseBumSmack.png"},
 
     ]
     return (
