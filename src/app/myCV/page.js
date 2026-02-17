@@ -177,12 +177,24 @@ export default function Page() {
                 </div>
                 <DividerComp></DividerComp>
 <div className={" font-serif"}>
-                <h2 className={"text-2xl font-bold"}>My Education:</h2>
-                <p className={"font-bold"}>University of the Witwatersrand, Johannesburg</p>
-                <p>Professional Bachelor of Arts (Honours Equivalent) in Digital Arts</p>
+                <h2 className={"text-2xl font-bold m-2"}>My Education:</h2>
+    <div>
+        <div className={"flex flex-row gap-2"}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#DC2626"
+                 className="bi bi-suit-heart-fill ml-2" viewBox="0 0 16 16">
+                <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+            </svg>
+            <p className={"font-bold text-xl"}>University of the Witwatersrand, Johannesburg</p>
+        </div>
+
+        <p className={"ml-10"}>Professional Bachelor of Arts (Honours Equivalent) in Digital Arts</p>
+    </div>
+
 </div>
+                <DividerComp></DividerComp>
             </div>
-            <DividerComp></DividerComp>
+
 <FooterComp></FooterComp>
         </main>
     );
