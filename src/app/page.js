@@ -60,7 +60,7 @@ export default function Home() {
         {
             image: "",
             title: "Unmatched Deck",
-            description: "A speculative design project for a fictional client",
+            description: "Custom illustrations for a personalized Unmatched Card Deck",
             categories: ["Illustration", "Digital Art"],
             path: "/projects/unmatcheddeck",
             icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
