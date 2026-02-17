@@ -1,3 +1,4 @@
+import DividerComp from "@/app/components/DividerComp";
 
 
 export default function ScreenLayoutComp({leftComponent, rightComponent}) {
@@ -10,7 +11,7 @@ export default function ScreenLayoutComp({leftComponent, rightComponent}) {
                 </div>
 
             </div>
-            <div className={"w-full h-0.5 bg-gray-500"}></div>
+            <DividerComp></DividerComp>
         </div>
     );
 }

@@ -5,12 +5,26 @@ import Image from "next/image";
 import HomeButtonComp from "@/app/components/HomeButtonComp";
 import NextProjectComp from "@/app/components/NextProjectComp";
 import WarningLabelComp from "@/app/components/WarningLabelComp";
+import ImageSlider from "@/app/components/ImageDisplayComp";
+import ImageDisplayComp from "@/app/components/ImageDisplayComp";
 
 
 export default function Page() {
+    const illustrations=[
+        {image: "/images/nature_unmatched/ElainesGetOut.png"},
+        {image: "/images/nature_unmatched/FrankBlocksThePath.png"},
+        {image: "/images/nature_unmatched/FrankWandersOff.png"},
+        {image: "/images/nature_unmatched/knight3.png"},
+        {image: "/images/nature_unmatched/pizzabox.png"},
+        {image: "/images/nature_unmatched/planted.png"},
+        {image: "/images/nature_unmatched/pruning.png"},
+        {image: "/images/nature_unmatched/resistTheUrge.png"},
+        {image: "/images/nature_unmatched/soup.png"},
+        {image: "/images/nature_unmatched/SurpriseBumSmack.png"},
+
+    ]
     return (
         <main className="min-h-screen">
-            <WarningLabelComp></WarningLabelComp>
             <div className={"flex flex-row"}>
                 <HomeButtonComp></HomeButtonComp>
             </div>
@@ -19,106 +33,30 @@ export default function Page() {
             <ScreenLayoutComp
                 leftComponent={
                     <HeaderComp
-                        heading="Not Nourish"
-                        subheading="Speculative Client:"
+                        heading="Unmatched Deck"
+                        subheading="Personal Project:"
                     />
                 }
                 rightComponent={
                     <GenericContentComp
-                        heading="Nourish: A Case Study"
+                        heading="Nature-inspired Deck"
                         content={
                             <>
                                 <p>
-                                    Nourish is a fictional subscription-based
-                                    healthy meal prep service focused on mood
-                                    support.
+                                    Unmatched is a card-based board game. It centres around the idea of unbalanced characters (Dracula, Sherlock Holmes, Invisible Man, Dr Jekyll & Mr Hyde) with their own unique deck of cards.
                                 </p>
                                 <p>
-                                    Meals are dietitian-developed and delivered
-                                    weekly.
+                                    There are hundreds of fan-made characters, with fan-made decks.
                                 </p>
                                 <p>
-                                    Nourish is targeting busy young professionals
-                                    (ages 22–25) who struggle to eat well.
+                                    When someone I love became obsessed with Unmatched, I knew exactly what had to be done; He needed a custom deck based on himself.
                                 </p>
                             </>
                         }
                     />
                 }
             />
-            <h2 className={"font-handwritten  lg:text-3xl flex m-10 w-80"}> Brand Identity Guidelines:</h2>
-
-            <div className="lg:p-10 flex justify-center">
-                <div
-
-                    style={{
-                        position: "relative",
-                        width: "100%",
-                        height: "auto",
-                        paddingTop: "56.25%",
-                        overflow: "hidden",
-                        borderRadius: "8px",
-                    }}
-                >
-                    <iframe
-                        loading="lazy"
-                        src="https://www.canva.com/design/DAG6W467O5A/d3RWCoVTt066Yd7ssGg5Iw/view?embed"
-                        style={{
-                            position: "absolute",
-                            inset: 0,
-                            width: "100%",
-                            height: "70%",
-                            border: "none",
-                        }}
-
-                    />
-                </div>
-
-            </div>
-            <h2 className={"font-handwritten  lg:text-3xl flex m-10 w-80"}> User Interface:</h2>
-
-            <div className={"m-10 grid lg:grid-cols-2"}>
-                <div
-                    className="relative overflow-hidden "
-                    style={{ paddingTop: '56.25%' }} // 16:9 ratio
-                >
-                    <Image
-                        src="/images/1.png"
-                        alt="test"
-                        fill
-                        className="object-contain"
-                    />
-                </div>
-                <div className={"m-10"}> These screenshots show off the on-boarding of the Nourish App.</div>
-            </div>
-            <div className={"m-10 grid lg:grid-cols-2"}>
-                <div
-                    className="relative overflow-hidden "
-                    style={{ paddingTop: '56.25%' }} // 16:9 ratio
-                >
-                    <Image
-                        src="/images/2.png"
-                        alt="test"
-                        fill
-                        className="object-contain"
-                    />
-                </div>
-                <div className={"m-10"}> These screens are a continuation of the on-boarding - it shows how users would provide the company with relevant information.</div>
-            </div>
-            <div className={"m-10 grid lg:grid-cols-2 gap-6"}>
-                <div
-                    className="relative overflow-hidden "
-                    style={{ paddingTop: '56.25%' }} // 16:9 ratio
-                >
-                    <Image
-                        src="/images/3.png"
-                        alt="test"
-                        fill
-                        className="object-contain"
-                    />
-                </div>
-                <div className={"m-10"}> These are the weekly menu screens, as well as the mood selection screen. </div>
-            </div>
+        <ImageDisplayComp imageArray={illustrations}></ImageDisplayComp>
         </main>
     );
 }
