@@ -1,4 +1,3 @@
-
 import WarningLabelComp from "@/app/components/WarningLabelComp";
 import ScreenLayoutComp from "@/app/components/ScreenLayoutComp";
 import HeaderComp from "@/app/components/HeaderComp";
@@ -9,47 +8,26 @@ import Link from "next/link";
 import FooterComp from "@/app/components/FooterComp";
 
 
-
 export default function Home() {
-    const categories = [
-        {name: "UI/UX Design", color: "#D32F2F", text: "#B3D89C"},
-        {name: "Brand Dev", color: "#1976D2", text: "#98DFEA"},
-        {name: "Digital Media Management", color: "#388E3C", text: "#5C7457"},
-        {name: "Digital Art", color: "#212121", text: "#6883BA"},
-        {name: "Coming Soon", color: "#7B1FA2", text: "#3D3B8E"},
-        {name: "Graphic Design", color: "#0D0C1D", text: "#3D3B8E"},
-        {name: "Illustration", color: "#0D0C1D", text: "#3D3B8E"},
 
-    ];
-
-    const blogPosts = [
-        {
-            image: "",
-            title: "Authentic Beauty Concept",
-            description: "Brand spotlight: a study of Authentic Beauty Concept",
-            date: "01/01/01"
-        },
-        {
-            image: "",
-            title: "Colour of the Year",
-            description: "Brand spotlight: a study of Authentic Beauty Concept",
-            date: "01/01/01"
-        },
-        {
-            image: "",
-            title: "Kleinsky's",
-            description: "Brand spotlight: a study of Kleinsky's",
-            date: "01/01/01"
-        },
-
-    ]
+    const categories = {
+        "UI/UX Design": {color: "#D32F2F", text: "#B3D89C"},
+        "Brand Dev": {color: "#1976D2", text: "#98DFEA"},
+        "Digital Media Management": {color: "#388E3C", text: "#5C7457"},
+        "Digital Art": {color: "#212121", text: "#6883BA"},
+        "Coming Soon": {color: "#7B1FA2", text: "#3D3B8E"},
+        "Graphic Design": {color: "#0D0C1D", text: "#3D3B8E"},
+        "Illustration": {color: "#0D0C1D", text: "#3D3B8E"}
+    };
 
     const projects = [
         {
-            image: "",
+            image: [
+                "/images/nourish/NourishImage.png",
+            ],
             title: "Nourish",
             description: "A speculative design project for a fictional client",
-            categories: ["Brand Dev", "UI/UX Design", "Graphic Design"],
+            categories: ["UI/UX Design", "Graphic Design"],
             path: "/projects/nourish",
             icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#dc2626"
                        className="bi bi-suit-diamond-fill" viewBox="0 0 16 16">
@@ -58,7 +36,9 @@ export default function Home() {
             </svg>
         },
         {
-            image: "",
+            image: [
+                "/images/nature_unmatched/Cover.png",
+            ],
             title: "Unmatched Deck",
             description: "Custom illustrations for a personalized Unmatched Card Deck",
             categories: ["Illustration", "Digital Art"],
@@ -69,18 +49,7 @@ export default function Home() {
                     d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907"/>
             </svg>
         },
-        {
-            image: "",
-            title: "Nothing to see here...",
-            description: "More projects coming soon.",
-            categories: ["Coming Soon"],
-            path: "/",
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                       className="bi bi-suit-spade-fill" viewBox="0 0 16 16">
-                <path
-                    d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907"/>
-            </svg>
-        },
+
 
     ];
 
@@ -114,14 +83,22 @@ export default function Home() {
                                           </>
                                       }
 
-                                    buttons={
-                                      <div className={"flex flex-row"}>
-                                          <Link href={"/aboutme"}><div className={"bg-red-900 p-2 rounded-full text-white font-bold font-serif m-2 border-2 border-black hover:border-red-900"}> Get to Know Me </div>
-                                          </Link>
-                                          <Link href={"/myCV"}><div className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> Look at my CV  </div>
-                                          </Link>
-                                      </div>
-                                        }
+                                      buttons={
+                                          <div className={"flex flex-row"}>
+                                              <Link href={"/aboutme"}>
+                                                  <div
+                                                      className={"bg-red-900 p-2 rounded-full text-white font-bold font-serif m-2 border-2 border-black hover:border-red-900"}> Get
+                                                      to Know Me
+                                                  </div>
+                                              </Link>
+                                              <Link href={"/myCV"}>
+                                                  <div
+                                                      className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> Look
+                                                      at my CV
+                                                  </div>
+                                              </Link>
+                                          </div>
+                                      }
 
                                   />
                                   }/>
