@@ -6,6 +6,7 @@ import HomeButtonComp from "@/app/components/HomeButtonComp";
 import WarningLabelComp from "@/app/components/WarningLabelComp";
 import FooterComp from "@/app/components/FooterComp";
 import ImageDisplayComp from "@/app/components/ImageDisplayComp";
+import GalleryComp from "@/app/components/GalleryComp";
 
 
 export default function Page() {
@@ -91,25 +92,9 @@ export default function Page() {
                     />
                 }
             />
-            <h2 className={"font-handwritten  lg:text-3xl flex m-10 w-80"}> Brand Identity Guidelines:</h2>
-            <ImageDisplayComp imageArray={nourishSlides}></ImageDisplayComp>
-
-
-            <h2 className={"font-handwritten  lg:text-3xl flex m-10 w-80"}> User Interface:</h2>
-            <ImageDisplayComp imageArray={nourishImages}></ImageDisplayComp>
-
+            <GalleryComp images={nourishImages}></GalleryComp>
 
             <FooterComp></FooterComp>
-
-
-
-
-
-
-
-
-
-
 
 
         </main>
