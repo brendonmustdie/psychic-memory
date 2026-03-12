@@ -29,7 +29,7 @@ export default function GalleryComp({images, header}) {
     return (
         <div className={"w-full"}>
             <div className={"text-xl font-bold font-handwritten mx-auto w-1/2 text-center my-4"}>{header}</div>
-            <div className={"grid grid-cols-2 gap-1"}>
+            <div className={"grid grid-cols-3 gap-1"}>
                 <div className={"grid md:col-span-2 w-full bg-white m-4 rounded-lg"}>
                     <img className={"h-100 m-auto p-1 object-contain"} src={images[selectedImage].image} alt=""/>
                 </div>

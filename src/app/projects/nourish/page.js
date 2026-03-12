@@ -74,8 +74,7 @@ export default function Page() {
 
     const nourishSlides = [
         {
-            image: "/images/nourish/nourishSlides/1.png",
-
+            image: "/images/nourish/nourishSlides/1.png"
         },
         {
             image: "/images/nourish/nourishSlides/2.png",

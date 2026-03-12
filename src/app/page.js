@@ -27,7 +27,7 @@ export default function Home() {
             ],
             title: "Nourish",
             description: "A speculative design project for a fictional client",
-            categories: ["UI/UX", "Graphic Design"],
+            categories: ["UI/UX", "Graphic Design", "Brand Dev"],
             path: "/projects/nourish",
             icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#dc2626"
                        className="bi bi-suit-diamond-fill" viewBox="0 0 16 16">
@@ -51,20 +51,13 @@ export default function Home() {
         },
         {
             image: [
-                "/images/StayTuned.jpg",
+                "/images/funStuff/cards.jpg",
             ],
-            title: "Coming Soon",
-            description: "Nothing here yet!",
-            categories: ["Coming Soon"],
-            path: "/",
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                       className="bi bi-suit-spade-fill" viewBox="0 0 16 16">
-                <path
-                    d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907"/>
-            </svg>
+            title: "Fun Personal Stuff",
+            description: "A collection of designs for my personal use - mostly my birthday party invites",
+            categories: ["Graphic Design"],
+            path: "/projects/funStuff",
         },
-
-
     ];
 
 
@@ -119,6 +112,13 @@ export default function Home() {
 
 
                 <div className={""}>
+                    {/*<div className={"grid grid-cols-5 mx-10"}>*/}
+                    {/*    <button className={"mx-1 bg-red-900 h-10 rounded-lg py-1 px-2"}> UI/UX</button>*/}
+                    {/*    <button className={"mx-1 bg-red-900 h-10 rounded-lg py-1 px-2"}> Graphic Design</button>*/}
+                    {/*    <button className={"mx-1 bg-red-900 h-10 rounded-lg py-1 px-2"}> Illustration</button>*/}
+                    {/*    <button className={"mx-1 bg-red-900 h-10 rounded-lg py-1 px-2"}> Digital Art</button>*/}
+                    {/*    <button className={"mx-1 bg-red-900 h-10 rounded-lg py-1 px-2"}> Brand Development</button>*/}
+                    {/*</div>*/}
                     <ScreenLayoutComp
                         leftComponent={<HeaderComp heading={"My Work"} subheading={""}/>}
                         rightComponent={<ProjectComp projects={projects} categories={categories}/>}
