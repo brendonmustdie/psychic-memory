@@ -77,16 +77,32 @@ export default function Home() {
                                       heading="About Me"
                                       content={
                                           <>
-                                              <p>Brendon is a UI/UX designer and front-end developer at Intelligent
-                                                  Elephant.io.</p>
-                                              <p>In 2024, she obtained an honours degree in Digital Art.</p>
-                                              <p>She is a creative and results-driven UX/UI Designer with 2 years of
-                                                  professional experience in user-centered and visual design across
-                                                  multiple platforms.</p>
-                                              <p>Skilled in collaborating with clients, developers, and cross-functional
+                                              <p className={"font-bold text-lg"}> Jack of all Trades, Master of None.
+                                                  Often
+                                                  times better than Master of
+                                                  One.</p>
+                                              <div className={"h-2"}></div>
+                                              <p>I'm the Lead Designer at Intelligent Elephant and Evra, as well as a
+                                                  junior front-end developer for Intelligent Elephant.</p>
+                                              <p>My deviating interests lead me to get my undergraduate and honours
+                                                  degree in Digital Art; where I studied Interactive Writing,
+                                                  Interactive Media, and Game Development.</p>
+                                              <p>I'm a creative and results-driven UI/UX designer, and I have 2 years of
+                                                  prodessional experience in user-centered and visual design across
+                                                  multiple platforms. My professional interests branch through multiple
+                                                  fields, and make me a better designer.</p>
+                                              <p>I'm skilled at collaborating with clients, developers, and
+                                                  cross-functional
                                                   teams to deliver user-centric and aesthetically compelling design
                                                   solutions.</p>
-                                              <p>Proficient in Notion, Figma, Adobe Creative Suite, and Sketch.</p>
+                                              <p>I'm proficient in Notion, Figma, Adobe Creative Suite, and Sketch.</p>
+                                              <p className={"font-bold mt-2 mb-2"}>Ask me about my current special
+                                                  interest:</p>
+                                              <div className={"flex flex-row gap-1 mb-5"}>
+                                                  <div className={"bg-red-900 px-2"}>Painting techniques,</div>
+                                                  <div className={"bg-green-950 px-2"}>Tattoo-ing Leather,</div>
+                                                  <div className={"bg-blue-950 px-2"}>Procedural Generation,</div>
+                                              </div>
                                           </>
                                       }
 
