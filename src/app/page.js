@@ -51,12 +51,12 @@ export default function Home() {
         },
         {
             image: [
-                "/images/funStuff/cards.jpg",
+                "/images/profileTree/Screens1.png",
             ],
-            title: "Fun Personal Stuff",
-            description: "A collection of designs for my personal use - mostly my birthday party invites",
-            categories: ["Graphic Design"],
-            path: "/projects/funStuff",
+            title: "Profiletree task",
+            description: "I was shortlisted for a job application with ProfileTree, and wasn't hired. But I was proud of my design task - so here it is.  ",
+            categories: ["UI/UX",],
+            path: "/projects/profileTree",
         },
     ];
 
