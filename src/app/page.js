@@ -6,14 +6,14 @@ import ProjectComp from "@/app/components/ProjectComp";
 import XPComp from "@/app/components/XPComp";
 import Link from "next/link";
 import FooterComp from "@/app/components/FooterComp";
-
+import Process from "@/app/components/Process";
 
 export default function Home() {
 
     const categories = {
         "UI/UX": {color: "#D32F2F", text: "#B3D89C"},
         "Brand Dev": {color: "#1976D2", text: "#98DFEA"},
-        "Digital Media Management": {color: "#388E3C", text: "#5C7457"},
+        "MY PROCESS": {color: "#388E3C", text: "#5C7457"},
         "Digital Art": {color: "#212121", text: "#6883BA"},
         "Coming Soon": {color: "#7B1FA2", text: "#3D3B8E"},
         "Graphic Design": {color: "#0D0C1D", text: "#3D3B8E"},
@@ -21,6 +21,13 @@ export default function Home() {
     };
 
     const projects = [
+        {
+            image: ["/images/illustrations/cover.png"],
+            title: "My Processs",
+            description: "Before you look at my work...check my process.",
+            categories: ["MY PROCESS"],
+            path: "/projects/process"
+        },
         {
             image: [
                 "/images/nourish/NourishImage.png",
@@ -51,7 +58,7 @@ export default function Home() {
         },
         {
             image: [
-                "/images/profileTree/Screens1.png",
+                "/images/profileTree/Cover.png",
             ],
             title: "Profiletree task",
             description: "I was shortlisted for a job application with ProfileTree, and wasn't hired. But I was proud of my design task - so here it is.  ",
@@ -63,6 +70,7 @@ export default function Home() {
 
     return (
         <main>
+          
             <div className="">
                 <div className={"md:hidden"}>
                     <div className={"text-construction-yellow m-3 font-serif"}>Please mind the dust! I'm building
