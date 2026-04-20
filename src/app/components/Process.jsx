@@ -76,8 +76,8 @@ export default function Process() {
     return (
         <div className={"mx-10"}>
             <div className={"font-serif text-4xl"}>My Process:</div>
-            <div className={"flex flex-row"}>
-                <div className="w-1/2">
+            <div className={"md:flex md:flex-row"}>
+                <div className="md:w-1/2 w-full">
                     <ECorpseComp imageArray={heads} index={indices[0]}/>
                     <ECorpseComp imageArray={body} index={indices[1]}/>
                     <ECorpseComp imageArray={feet} index={indices[2]}/>
@@ -85,7 +85,7 @@ export default function Process() {
                         page
                     </div>
                 </div>
-                <div className={"m-4 w-1/2"}>
+                <div className={"m-4 md:w-1/2"}>
                     <div>
                         <div className={"font-serif"}> Step 1:</div>
                         <div className={"font-handwritten text-xl"}>Define the Project's Identity:</div>
@@ -114,7 +114,7 @@ export default function Process() {
 
                 </div>
             </div>
-            <div className={"m-4 flex flex-row gap-4"}>
+            <div className={"m-4 md:flex md:flex-row gap-4"}>
                 <div>
                     <div className={"font-serif"}> Step 3:</div>
                     <div className={"font-handwritten text-xl"}>Brush in the Major Aesthetics:</div>
@@ -130,7 +130,7 @@ export default function Process() {
                     </div>
                 </div>
                 <div>
-                    <div className={"font-serif"}> Step 4:</div>
+                    <div className={"font-serif my-4 md:my-0"}> Step 4:</div>
                     <div className={"font-handwritten text-xl"}>Create a shopping list:</div>
                     <div className={"font-serif"}>
                         What do we need? What do we want? What's important? What can stay - what must go? This is a long
@@ -142,13 +142,13 @@ export default function Process() {
             </div>
 
             <div>
-                <div className={"font-serif"}> Steps 5, 6 and 7:</div>
+                <div className={"font-serif "}> Steps 5, 6 and 7:</div>
                 <div className={"font-handwritten text-2xl"}>The Design Loop:</div>
                 <div className={"font-serif w-full text-center"}>This is a common design philosophy in the game's
                     industry. The idea is to make something small, fast, and test as fast as possible. Every iteration
                     is a small change.
                 </div>
-                <div className={"font-serif grid grid-cols-2 gap-10"}>
+                <div className={"font-serif md:grid md:grid-cols-2 md:gap-10"}>
                     <div>
 
                         <div className={"font-handwritten text-xl mt-3"}>Rapid Prototype:</div>
