@@ -81,9 +81,9 @@ export default function Process() {
                     <ECorpseComp imageArray={heads} index={indices[0]}/>
                     <ECorpseComp imageArray={body} index={indices[1]}/>
                     <ECorpseComp imageArray={feet} index={indices[2]}/>
-                    <div className={"w-full text-center text-gray-400"}>Psst...I drew this. Check it on the project
-                        page
-                    </div>
+                    {/*<div className={"w-full text-center text-gray-400"}>Psst...I drew this. Check it on the project*/}
+                    {/*    page*/}
+                    {/*</div>*/}
                 </div>
                 <div className={"m-4 md:w-1/2"}>
                     <div>
