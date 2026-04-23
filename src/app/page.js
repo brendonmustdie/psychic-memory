@@ -54,15 +54,6 @@ export default function Home() {
             text: "#93C5FD"
         }
     };
-    const progress = [
-        {
-            image: ["/images/illustrations/cover.png"],
-            title: "My Processs",
-            description: "Before you look at my work...check my process.",
-            categories: ["MY PROCESS"],
-            path: "/projects/process"
-        },
-    ]
 
     const projects = [
 
@@ -95,15 +86,15 @@ export default function Home() {
             categories: ["UI/UX",],
             path: "/projects/profileTree",
         },
-        // {
-        //     image: [
-        //         "/images/illustrations/cover.png",
-        //     ],
-        //     title: "Exquisi-Corpse Illustrations",
-        //     description: "I made these illustrations for the Exquiste-corpse component on the process page!",
-        //     categories: ["Illustration", "Digital Art",],
-        //     path: "/projects/profileTree",
-        // },
+        {
+            image: [
+                "/images/illustrations/cover.png",
+            ],
+            title: "Exquisi-Corpse Illustrations",
+            description: "I made these illustrations for the Exquiste-corpse component on the process page!",
+            categories: ["Illustration", "Digital Art",],
+            path: "/projects/exquisiteCorpse",
+        },
     ];
 
     const filteredProjects =
@@ -177,12 +168,12 @@ export default function Home() {
                                                       to Know Me
                                                   </div>
                                               </Link>
-                                              <Link href={"/myCV"}>
-                                                  <div
-                                                      className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> Look
-                                                      at my CV
-                                                  </div>
-                                              </Link>
+                                              {/*<Link href={"/myCV"}>*/}
+                                              {/*    <div*/}
+                                              {/*        className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> Look*/}
+                                              {/*        at my CV*/}
+                                              {/*    </div>*/}
+                                              {/*</Link>*/}
                                               <Link href={"/projects/process"}>
                                                   <div
                                                       className={"bg-[#335566] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> My
