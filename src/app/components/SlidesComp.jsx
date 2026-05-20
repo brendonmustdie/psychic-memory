@@ -18,6 +18,7 @@ export default function SlidesComp({images, header}) {
         setSelectedImage((prev) => (prev - 1 + images.length) % images.length);
     };
 
+
     useEffect(() => {
         setSelectedImage(0);
     }, [images]);

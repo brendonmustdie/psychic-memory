@@ -1,17 +1,8 @@
 "use client";
-import WarningLabelComp from "@/app/components/WarningLabelComp";
-import ScreenLayoutComp from "@/app/components/ScreenLayoutComp";
-import HeaderComp from "@/app/components/HeaderComp";
-import GenericContentComp from "@/app/components/GenericContentComp";
-import ProjectComp from "@/app/components/ProjectComp";
-import XPComp from "@/app/components/XPComp";
 import Link from "next/link";
 import FooterComp from "@/app/components/FooterComp";
-import Process from "@/app/components/Process";
 import DividerComp from "@/app/components/DividerComp";
 import {useState} from "react";
-import XPCardComp from "@/app/components/XPCardComp";
-// import {projectHmrEvents} from "next/dist/build/swc/generated-native";
 
 export default function Home() {
 
@@ -56,45 +47,63 @@ export default function Home() {
     };
 
     const projects = [
-
         {
             image: [
-                "/images/nourish/NourishImage.png",
+                "/images/sqare/SQARE_cover.png",
             ],
-            title: "Nourish",
-            description: "A speculative design project for a fictional client",
-            categories: ["UI/UX", "Graphic Design", "Brand Dev"],
-            path: "/projects/nourish",
-
-        },
-        {
-            image: [
-                "/images/nature_unmatched/Cover.png",
-            ],
-            title: "Unmatched Deck",
-            description: "Custom illustrations for a personalized Unmatched Card Deck",
-            categories: ["Illustration", "Digital Art"],
-            path: "/projects/unmatcheddeck",
+            title: "Sqare",
+            description: "A redesign of the SQARE application for Intelligent Elephant",
+            categories: ["UI/UX", "Brand Dev"],
+            path: "/projects/sqare",
 
         },
-        {
-            image: [
-                "/images/profileTree/Cover.png",
-            ],
-            title: "Profiletree task",
-            description: "I was shortlisted for a job application with ProfileTree, and wasn't hired. But I was proud of my design task - so here it is.  ",
-            categories: ["UI/UX",],
-            path: "/projects/profileTree",
-        },
-        {
-            image: [
-                "/images/illustrations/cover.png",
-            ],
-            title: "Exquisi-Corpse Illustrations",
-            description: "I made these illustrations for the Exquiste-corpse component on the process page!",
-            categories: ["Illustration", "Digital Art",],
-            path: "/projects/exquisiteCorpse",
-        },
+        // {
+        //     image: [
+        //         "/images/nourish/NourishImage.png",
+        //     ],
+        //     title: "Nourish",
+        //     description: "A speculative design project for a fictional client",
+        //     categories: ["UI/UX", "Graphic Design", "Brand Dev"],
+        //     path: "/projects/nourish",
+        //
+        // },
+        // {
+        //     image: [
+        //         "/images/nature_unmatched/Cover.png",
+        //     ],
+        //     title: "Unmatched Deck",
+        //     description: "Custom illustrations for a personalized Unmatched Card Deck",
+        //     categories: ["Illustration", "Digital Art"],
+        //     path: "/projects/unmatcheddeck",
+        //
+        // },
+        // {
+        //     image: [
+        //         "/images/profileTree/Cover.png",
+        //     ],
+        //     title: "Profiletree task",
+        //     description: "I was shortlisted for a job application with ProfileTree, and wasn't hired. But I was proud of my design task - so here it is.  ",
+        //     categories: ["UI/UX",],
+        //     path: "/projects/profileTree",
+        // },
+        // {
+        //     image: [
+        //         "/images/illustrations/cover.png",
+        //     ],
+        //     title: "Exquisi-Corpse Illustrations",
+        //     description: "I made these illustrations for the Exquiste-corpse component on the process page!",
+        //     categories: ["Illustration", "Digital Art",],
+        //     path: "/projects/exquisiteCorpse",
+        // },
+        // {
+        //     image: [
+        //         "/images/illustrations/cover.png",
+        //     ],
+        //     title: "Clicker",
+        //     description: "I made these illustrations for the Exquiste-corpse component on the process page!",
+        //     categories: ["Illustration", "Digital Art",],
+        //     path: "/projects/clicker",
+        // },
     ];
 
     const filteredProjects =
@@ -116,75 +125,19 @@ export default function Home() {
     );
     return (
         <main>
-
             <div className="">
-                <div className={"md:hidden"}>
-                    <div className={"text-construction-yellow m-3 font-serif"}>Please mind the dust! I'm building
-                        something beautiful!
+                <div className={"grid grid-cols-3"}>
+                    <div className={"my-10 mx-5 flex flex-row"}>
                     </div>
-                    <WarningLabelComp></WarningLabelComp>
+                    <div className={"my-5"}>
+                        <div className={"text-center text-lg font-serif font-bold"}>Brendon Kruger's</div>
+                        <div className={"text-center text-3xl font-handwritten font-bold"}>Portfolio</div>
+                    </div>
+                    <div className={"text-right my-10 mx-5"}>
+
+                    </div>
                 </div>
-
-
-                <ScreenLayoutComp leftComponent={<HeaderComp heading={"Portfolio"} subheading={"Brendon Kruger's"}/>}
-                                  rightComponent={<GenericContentComp
-                                      heading="About Me"
-                                      content={
-                                          <>
-                                              <p className={"font-bold text-lg"}> Jack of all Trades, Master of None.
-                                                  Often
-                                                  times better than Master of
-                                                  One.</p>
-                                              <div className={"h-2"}></div>
-                                              <p>I'm the Lead Designer at Intelligent Elephant and Evra, as well as a
-                                                  junior front-end developer for Intelligent Elephant.</p>
-                                              <p>My deviating interests lead me to get my undergraduate and honours
-                                                  degree in Digital Art; where I studied Interactive Writing,
-                                                  Interactive Media, and Game Development.</p>
-                                              <p>I'm a creative and results-driven UI/UX designer, and I have 2 years of
-                                                  prodessional experience in user-centered and visual design across
-                                                  multiple platforms. My professional interests branch through multiple
-                                                  fields, and make me a better designer.</p>
-                                              <p>I'm skilled at collaborating with clients, developers, and
-                                                  cross-functional
-                                                  teams to deliver user-centric and aesthetically compelling design
-                                                  solutions.</p>
-                                              <p>I'm proficient in Notion, Figma, Adobe Creative Suite, and Sketch.</p>
-                                              <p className={"font-bold mt-2 mb-2"}>Ask me about my current special
-                                                  interest:</p>
-                                              <div className={"flex flex-row gap-1 mb-5"}>
-                                                  <div className={"bg-red-900 px-2"}>Painting techniques,</div>
-                                                  <div className={"bg-green-950 px-2"}>Tattoo-ing Leather,</div>
-                                                  <div className={"bg-blue-950 px-2"}>Procedural Generation,</div>
-                                              </div>
-                                          </>
-                                      }
-
-                                      buttons={
-                                          <div className={"flex flex-row"}>
-                                              <Link href={"/aboutme"}>
-                                                  <div
-                                                      className={"bg-red-900 p-2 rounded-full text-white font-bold font-serif m-2 border-2 border-black hover:border-red-900"}> Get
-                                                      to Know Me
-                                                  </div>
-                                              </Link>
-                                              {/*<Link href={"/myCV"}>*/}
-                                              {/*    <div*/}
-                                              {/*        className={"bg-[#35654d] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> Look*/}
-                                              {/*        at my CV*/}
-                                              {/*    </div>*/}
-                                              {/*</Link>*/}
-                                              <Link href={"/projects/process"}>
-                                                  <div
-                                                      className={"bg-[#335566] p-2 rounded-full text-white font-bold font-serif m-2  border-2 border-black hover:border-[#35654d]"}> My
-                                                      Process
-                                                  </div>
-                                              </Link>
-                                          </div>
-                                      }
-
-                                  />
-                                  }/>
+                <DividerComp></DividerComp>
 
 
                 <div className={""}>
@@ -192,7 +145,9 @@ export default function Home() {
                     <div className={"mx-10 my-5"}>
                         <h1 className={"font-handwritten md:-mb-6 text-lg"}> The main attraction: </h1>
                         <h1 className={"font-serif md:text-9xl text-3xl"}> My Work </h1>
-                        <div className="flex flex-wrap gap-2 mx-10 my-5">
+
+                        <div className={"mt-10 font-serif"}>Filter through my projects with tags!</div>
+                        <div className="flex flex-wrap gap-2 mx-10">
                             <div className="flex flex-wrap gap-2 my-5">
                                 {["ALL", ...availableCategories].map((category) => {
                                     const isActive = selectedCategory === category;
@@ -284,16 +239,9 @@ export default function Home() {
 
                     </div>
                     <DividerComp></DividerComp>
-                    {/*<ScreenLayoutComp*/}
-                    {/*    leftComponent={<HeaderComp heading={"My Work"} subheading={""}/>}*/}
-                    {/*    rightComponent={<ProjectComp projects={projects} categories={categories}/>}*/}
-                    {/*/>*/}
+
                 </div>
 
-                <ScreenLayoutComp
-                    leftComponent={<HeaderComp heading={"My Experience"} subheading={"Want to hire me?"}/>}
-                    rightComponent={<XPComp/>}
-                />
             </div>
             <FooterComp></FooterComp>
         </main>

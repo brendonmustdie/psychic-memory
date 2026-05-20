@@ -3,10 +3,6 @@ import HeaderComp from "../../components/HeaderComp";
 import GenericContentComp from "../../components/GenericContentComp";
 import Image from "next/image";
 import HomeButtonComp from "@/app/components/HomeButtonComp";
-import NextProjectComp from "@/app/components/NextProjectComp";
-import WarningLabelComp from "@/app/components/WarningLabelComp";
-import ImageSlider from "@/app/components/ImageDisplayComp";
-import ImageDisplayComp from "@/app/components/ImageDisplayComp";
 import GalleryComp from "@/app/components/GalleryComp";
 
 

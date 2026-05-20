@@ -1,14 +1,7 @@
-import ScreenLayoutComp from "../components/ScreenLayoutComp";
-import HeaderComp from "../components/HeaderComp";
-import GenericContentComp from "../components/GenericContentComp";
-import Image from "next/image";
+
 import HomeButtonComp from "@/app/components/HomeButtonComp";
-import NextProjectComp from "@/app/components/NextProjectComp";
-import WarningLabelComp from "@/app/components/WarningLabelComp";
 import Link from "next/link";
-import XPComp from "@/app/components/XPComp";
-import DividerComp from "@/app/components/DividerComp";
-import XPCardComp from "@/app/components/XPCardComp";
+import DividerComp from "@/app/components/DividerComp
 import FooterComp from "@/app/components/FooterComp";
 
 export default function Page() {

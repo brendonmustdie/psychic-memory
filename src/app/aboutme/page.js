@@ -2,7 +2,6 @@ import ScreenLayoutComp from "../components/ScreenLayoutComp";
 import HeaderComp from "../components/HeaderComp";
 import GenericContentComp from "../components/GenericContentComp";
 import HomeButtonComp from "@/app/components/HomeButtonComp";
-import WarningLabelComp from "@/app/components/WarningLabelComp";
 import Image from "next/image";
 import FooterComp from "@/app/components/FooterComp";
 
@@ -28,19 +27,26 @@ export default function Page() {
                         content={
                             <>
                                 <p>
-                                    I'm a UI/UX designer and front-end developer with a passion for beautiful websites.I'm interested in brand development, and copywriting - and I'm hoping to develop some experience in these areas.
+                                    I'm a UI/UX designer and front-end developer with a passion for beautiful
+                                    websites.I'm interested in brand development, and copywriting - and I'm hoping to
+                                    develop some experience in these areas.
 
                                 </p>
                                 <br/>
                                 <p>
-                                    I'd love to be the ui/ux designer that overhauls your sites and applications. My strengths lie in designing and building beautiful, responsive front
-                                    ends. I'm comfortable in native HTML, React, and Next.js. I'm a big fan of Tailwind, and HeroUI, but I'm also comfortable building components
+                                    I'd love to be the ui/ux designer that overhauls your sites and applications. My
+                                    strengths lie in designing and building beautiful, responsive front
+                                    ends. I'm comfortable in native HTML, React, and Next.js. I'm a big fan of Tailwind,
+                                    and HeroUI, but I'm also comfortable building components
                                     from scratch.
-                                    </p>
+                                </p>
                                 <br/>
                                 <p>
-                                    I work best on a small team or on my own. I like a clear hierarchy, but a culture of learning and passion. Our differences make us a better team - and I'd like our culture to support that.
-                                    I'm an avid learner with a passion for "manipulating" the user. I'm great at knowing - and studying - how a user interacts with a product, and how
+                                    I work best on a small team or on my own. I like a clear hierarchy, but a culture of
+                                    learning and passion. Our differences make us a better team - and I'd like our
+                                    culture to support that.
+                                    I'm an avid learner with a passion for "manipulating" the user. I'm great at knowing
+                                    - and studying - how a user interacts with a product, and how
                                     to guide them the way we want.
                                 </p>
                             </>
@@ -49,32 +55,37 @@ export default function Page() {
                 }
             />
             <ScreenLayoutComp
-            leftComponent={
-                <HeaderComp
-                    heading="Outside of work"
-                    subheading="Behind the scenes:"
-                />
-            }
-            rightComponent={
-                <GenericContentComp
-                    heading="In my personal life,"
-                    content={
-                        <>
-                            <p>
-                                I care deeply about animals and the environment. I absolutely live for my pets and the time that I can spend with them.
-                            </p>
-                            <br/>
-                            <p>
-                                Of course, I love games and integrate play into my life as often as possible. I spend a lot of time thinking about or playing card games, particularly solitaire and a variant of Poker.
-                            </p>
-                            <br/>
-                            <p>  I enjoy musical theater, and even did some drama in my short time in high school! I love to do yoga, bake new and interesting recipes, and reading fantasy or horror novels.
-                            </p>
-                        </>
-                    }
-                />
-            }
-        />
+                leftComponent={
+                    <HeaderComp
+                        heading="Outside of work"
+                        subheading="Behind the scenes:"
+                    />
+                }
+                rightComponent={
+                    <GenericContentComp
+                        heading="In my personal life,"
+                        content={
+                            <>
+                                <p>
+                                    I care deeply about animals and the environment. I absolutely live for my pets and
+                                    the time that I can spend with them.
+                                </p>
+                                <br/>
+                                <p>
+                                    Of course, I love games and integrate play into my life as often as possible. I
+                                    spend a lot of time thinking about or playing card games, particularly solitaire and
+                                    a variant of Poker.
+                                </p>
+                                <br/>
+                                <p> I enjoy musical theater, and even did some drama in my short time in high school! I
+                                    love to do yoga, bake new and interesting recipes, and reading fantasy or horror
+                                    novels.
+                                </p>
+                            </>
+                        }
+                    />
+                }
+            />
             <ScreenLayoutComp
                 leftComponent={
                     <HeaderComp
@@ -88,9 +99,21 @@ export default function Page() {
                         content={
                             <div className="flex gap-6">
                                 {[
-                                    { name: "Elaine", title: "Pest Control Expert", desc: "Ensures no spiders, geckos, or mice go un-eaten." },
-                                    { name: "Frank", title: "Lead Cuddle-bug", desc: "Handles the tricky task of keeping me company." },
-                                    { name: "Kramer", title: "Consulting Guard Dog", desc: "Reminds me of food time, everyday." },
+                                    {
+                                        name: "Elaine",
+                                        title: "Pest Control Expert",
+                                        desc: "Ensures no spiders, geckos, or mice go un-eaten."
+                                    },
+                                    {
+                                        name: "Frank",
+                                        title: "Lead Cuddle-bug",
+                                        desc: "Handles the tricky task of keeping me company."
+                                    },
+                                    {
+                                        name: "Kramer",
+                                        title: "Consulting Guard Dog",
+                                        desc: "Reminds me of food time, everyday."
+                                    },
                                 ].map((assistant) => (
                                     <div key={assistant.name} className="flex flex-col items-center w-48">
                                         <div className="relative w-48 h-48">
@@ -111,7 +134,7 @@ export default function Page() {
                     />
                 }
             />
-<FooterComp></FooterComp>
+            <FooterComp></FooterComp>
         </main>
     );
 }
