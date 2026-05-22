@@ -1,7 +1,6 @@
-
 import HomeButtonComp from "@/app/components/HomeButtonComp";
 import Link from "next/link";
-import DividerComp from "@/app/components/DividerComp
+import DividerComp from "@/app/components/DividerComp";
 import FooterComp from "@/app/components/FooterComp";
 
 export default function Page() {
@@ -17,8 +16,8 @@ export default function Page() {
                 "testing, identifying key issues and implementing solutions that improved user experience by 12%. Developed the front-end of the site using\n" +
                 "HTML, CSS, and JavaScript, eventually building the site in React, enhancing design consistency and user engagement",
             skills: ["CSS", "HTML", "JavaScript"],
-            icon:  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        className="bi bi-suit-club-fill" viewBox="0 0 16 16">
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                       className="bi bi-suit-club-fill" viewBox="0 0 16 16">
                 <path
                     d="M11.5 12.5a3.5 3.5 0 0 1-2.684-1.254 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907 3.5 3.5 0 1 1-2.538-5.743 3.5 3.5 0 1 1 6.708 0A3.5 3.5 0 1 1 11.5 12.5"/>
             </svg>
@@ -50,8 +49,8 @@ export default function Page() {
                 "Created wireframes, mock-ups, and interactive prototypes using Figma and Sketch, iterating designs based on user feedback and usability\n" +
                 "testing, enhancing design consistency by 21%.",
             skills: ["CSS", "HTML", "JavaScript"],
-            icon:  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        className="bi bi-suit-spade-fill" viewBox="0 0 16 16">
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                       className="bi bi-suit-spade-fill" viewBox="0 0 16 16">
                 <path
                     d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907"/>
             </svg>
@@ -73,14 +72,14 @@ export default function Page() {
 
                 <div className={"flex flex-row gap-2 m-2"}>
                     <Link href="https://www.linkedin.com/in/brendon-kruger-a5a846232/">
-                    <div className={"h-10 w-10 border border-white rounded-full content-center hover:bg-white"}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             className="bi bi-linkedin ml-2.5" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                        </svg>
-                    </div>
-                </Link>
+                        <div className={"h-10 w-10 border border-white rounded-full content-center hover:bg-white"}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 className="bi bi-linkedin ml-2.5" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </div>
+                    </Link>
                     <Link href="/BrendonKruger_CV.pdf" download={"BrendonKruger_CV.pdf"}>
                         <div className={"h-10 w-10 border border-white rounded-full content-center hover:bg-white"}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -119,37 +118,43 @@ export default function Page() {
                 <div className={"font-serif my-2"}>
                     <p>I love the user journey - and I love guiding user behaviour. </p>
                     <br/><p>
-                        I have a keen interest in video game development so my private time is spent building procedurally
-                        generated cities, physics based digital toys,
-                        and pretty illustrations. </p> <br/>
+                    I have a keen interest in video game development so my private time is spent building procedurally
+                    generated cities, physics based digital toys,
+                    and pretty illustrations. </p> <br/>
                     <p>
-                        I try my absolute best to work through HackerRank as often as I can - and I write blog posts monthly on
+                        I try my absolute best to work through HackerRank as often as I can - and I write blog posts
+                        monthly on
                         the design trends in the world around
                         me. What I like, what I don't, and what I hope to use in the future.</p>
                 </div>
-<DividerComp></DividerComp>
+                <DividerComp></DividerComp>
 
                 <h3 className={"font-serif font-bold text-2xl"}>My Ideal Job:</h3>
                 <div className={"font-serif my-2"}>
                     <p>I'd love to be the ui/ux designer that overhauls your sites and applications. My strengths lie in
                         designing and building beautiful, responsive front
-                        ends. I'm comfortable in native HTML, React, and Next.js. I'm a big fan of Tailwind, and HeroUI, but I'm
-                    also comfortable building components
-                    from scratch.</p> <br/>
-                <p>I'm all about giving back to the community - and I'd love to work in industries that care. I work best on
-                    a small team or on my own. I like a clear
-                    hierarchy, but a culture of learning and passion. Our differences make us a better team - and I'd like
-                    our culture to support that.</p> <br/>
-                <p>
-                    I'm deeply interested in all things digital, and all things beautiful. That means I'd love to learn new
-                    skills that help me build a front-end, beautiful
-                    marketing materials, and even copywriting as a special little hobby.
-                </p> <br/>
-                <p>
-                    I'm an avid learner with a passion for "manipulating" the user. I'm great at knowing - and studying -
-                    how a user interacts with a product, and how
-                    to guide them the way we want.
-                </p>
+                        ends. I'm comfortable in native HTML, React, and Next.js. I'm a big fan of Tailwind, and HeroUI,
+                        but I'm
+                        also comfortable building components
+                        from scratch.</p> <br/>
+                    <p>I'm all about giving back to the community - and I'd love to work in industries that care. I work
+                        best on
+                        a small team or on my own. I like a clear
+                        hierarchy, but a culture of learning and passion. Our differences make us a better team - and
+                        I'd like
+                        our culture to support that.</p> <br/>
+                    <p>
+                        I'm deeply interested in all things digital, and all things beautiful. That means I'd love to
+                        learn new
+                        skills that help me build a front-end, beautiful
+                        marketing materials, and even copywriting as a special little hobby.
+                    </p> <br/>
+                    <p>
+                        I'm an avid learner with a passion for "manipulating" the user. I'm great at knowing - and
+                        studying -
+                        how a user interacts with a product, and how
+                        to guide them the way we want.
+                    </p>
                 </div>
                 <DividerComp></DividerComp>
                 <h2 className={"font-serif text-2xl font-bold"}>Work Experience:</h2>
@@ -158,37 +163,41 @@ export default function Page() {
                         <div key={xpElement.title} className={"my-2 font-serif"}>
                             <div className={"flex flex-row gap-2 "}>
                                 <div>{xpElement.icon}</div>
-                                <div><div><div className={"font-bold text-xl"}>{xpElement.title}</div>
-                                    {xpElement.company}
-                                    <div className={"flex flex-row text-gray-400"}> {xpElement.startDate} {xpElement.endDate}</div>
+                                <div>
+                                    <div>
+                                        <div className={"font-bold text-xl"}>{xpElement.title}</div>
+                                        {xpElement.company}
+                                        <div
+                                            className={"flex flex-row text-gray-400"}> {xpElement.startDate} {xpElement.endDate}</div>
 
-                                    {xpElement.description}
-                                </div></div>
+                                        {xpElement.description}
+                                    </div>
+                                </div>
                             </div>
-                            </div>
+                        </div>
                     ))}
                 </div>
                 <DividerComp></DividerComp>
-<div className={" font-serif"}>
-                <h2 className={"text-2xl font-bold m-2"}>My Education:</h2>
-    <div>
-        <div className={"flex flex-row gap-2"}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#DC2626"
-                 className="bi bi-suit-heart-fill ml-2" viewBox="0 0 16 16">
-                <path
-                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
-            </svg>
-            <p className={"font-bold text-xl"}>University of the Witwatersrand, Johannesburg</p>
-        </div>
+                <div className={" font-serif"}>
+                    <h2 className={"text-2xl font-bold m-2"}>My Education:</h2>
+                    <div>
+                        <div className={"flex flex-row gap-2"}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#DC2626"
+                                 className="bi bi-suit-heart-fill ml-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+                            </svg>
+                            <p className={"font-bold text-xl"}>University of the Witwatersrand, Johannesburg</p>
+                        </div>
 
-        <p className={"ml-10"}>Professional Bachelor of Arts (Honours Equivalent) in Digital Arts</p>
-    </div>
+                        <p className={"ml-10"}>Professional Bachelor of Arts (Honours Equivalent) in Digital Arts</p>
+                    </div>
 
-</div>
+                </div>
                 <DividerComp></DividerComp>
             </div>
 
-<FooterComp></FooterComp>
+            <FooterComp></FooterComp>
         </main>
     );
 }
