@@ -8,7 +8,7 @@ export default function Page() {
     const xpElements = [
         {
             title: "Front End Developer and Lead Designer-",
-            startDate: "July 2024-",
+            startDate: "July 2024  -",
             endDate: "Present",
             company: "Intelligent Elephant Inc",
             description: "Followed guidelines from clients to lead the re-design process for a desktop-run project management application, resulting in a 22% increase\n" +
