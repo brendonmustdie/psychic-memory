@@ -8,6 +8,7 @@ import FooterComp from "@/app/components/FooterComp";
 import {useState} from "react";
 import DividerComp from "@/app/components/DividerComp";
 import SlidesComp from "@/app/components/SlidesComp";
+import GalleryComp from "@/app/components/GalleryComp.jsx";
 
 
 export default function Page() {
@@ -189,7 +190,7 @@ export default function Page() {
             <div className={"w-full text-center text-2xl font-handwritten mt-10"}> {title} </div>
             {slides ?
                 <SlidesComp images={galleryArray}></SlidesComp> :
-                //<GalleryComp images={galleryArray}></GalleryComp>}
+                <GalleryComp images={galleryArray}></GalleryComp>}
             <FooterComp></FooterComp>
         </main>
     );
