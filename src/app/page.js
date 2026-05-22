@@ -39,7 +39,7 @@ export default function Home() {
             hover: "#9CA3AF", // lighter slate
             text: "#F9FAFB"
         },
-        "MY PROCESS": {
+        "Speculative": {
             color: "#0F172A",
             hover: "#1E293B", // slightly lighter navy
             text: "#93C5FD"
@@ -47,6 +47,16 @@ export default function Home() {
     };
 
     const projects = [
+        {
+            image: [
+                "/images/profileTree/Cover.png",
+            ],
+            title: "ProfileTree",
+            description: "A redesign of the SQARE application for Intelligent Elephant",
+            categories: ["UI/UX", "Speculative"],
+            path: "/projects/profileTree",
+
+        },
         {
             image: [
                 "/images/SQARE/SQARE_cover.png",
