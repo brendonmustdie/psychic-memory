@@ -506,7 +506,7 @@ export default function Page() {
                         </div>
                     </div>
 
-                    <div className={"grid grid-cols-3 grid-rows-8 mt-2 mx-10"}>
+                    <div className={"grid grid-cols-3 mt-2 mx-10"}>
                         <div>
                             Gives the user
                             information to make decisions, without our team's invovlement.
@@ -520,7 +520,7 @@ export default function Page() {
                         </div>
                     </div>
 
-                    <div className={"grid grid-cols-3 grid-rows-8 mt-2 mx-10"}>
+                    <div className={"grid grid-cols-3 mt-2 mx-10"}>
                         <div className={"my-2"}>Too much copy, too much jargon.</div>
                         <div className={"flex items-center justify-center"}>
                             {arrow}
@@ -528,7 +528,7 @@ export default function Page() {
                         <div className={"my-2"}>Leaves the user with questions, to guide them to our contact page.</div>
                     </div>
 
-                    <div className={"grid grid-cols-3 grid-rows-8 mt-2 mx-10"}>
+                    <div className={"grid grid-cols-3mt-2 mx-10"}>
                         <div>Unbroken blocks of text without visual interest.</div>
                         <div className={"flex items-center justify-center"}>
                             {arrow}
