@@ -533,7 +533,7 @@ export default function Page() {
                         <div className={"flex items-center justify-center"}>
                             {arrow}
                         </div>
-                        <div>Pictures and unique visual breaks between information.</div>
+                        <div>Pictures and unique, visual breaks between information.</div>
                     </div>
 
                 </section>
