@@ -189,7 +189,7 @@ export default function Page() {
             <div className={"w-full text-center text-2xl font-handwritten mt-10"}> {title} </div>
             {slides ?
                 <SlidesComp images={galleryArray}></SlidesComp> :
-                <GalleryComp images={galleryArray}></GalleryComp>}
+                //<GalleryComp images={galleryArray}></GalleryComp>}
             <FooterComp></FooterComp>
         </main>
     );
