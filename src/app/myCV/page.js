@@ -7,7 +7,7 @@ export default function Page() {
 
     const xpElements = [
         {
-            title: "Front End Developer and Lead Designer",
+            title: "Front End Developer and Lead Designer-",
             startDate: "July 2024-",
             endDate: "Present",
             company: "Intelligent Elephant Inc",
