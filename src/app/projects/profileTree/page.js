@@ -85,10 +85,10 @@ function ScratchBoard({words}) {
                         ...prev,
                         [id]: "active",
                     }));
-                }, 5000);
+                }, 3000);
 
                 return () => clearTimeout(t2);
-            }, 500);
+            }, 800);
 
             return () => clearTimeout(t1);
         });
@@ -519,7 +519,6 @@ export default function Page() {
                         <div> Guides the user to an expert who can sell them the service.
                         </div>
                     </div>
-                    <div className={"bg-gray-400 h-1 w-full"}></div>
 
                     <div className={"grid grid-cols-3 grid-rows-8 mt-2 mx-10"}>
                         <div className={"my-2"}>Too much copy, too much jargon.</div>
@@ -528,7 +527,6 @@ export default function Page() {
                         </div>
                         <div className={"my-2"}>Leaves the user with questions, to guide them to our contact page.</div>
                     </div>
-                    <div className={"bg-gray-400 h-1 w-full"}></div>
 
                     <div className={"grid grid-cols-3 grid-rows-8 mt-2 mx-10"}>
                         <div>Unbroken blocks of text without visual interest.</div>
@@ -563,12 +561,6 @@ export default function Page() {
                     </div>
 
 
-                    {/*<h2 className="font-serif mb-2">Exploration</h2>*/}
-                    {/*<ShuffleBoard words={BASE_WORDS}/>*/}
-
-
-                    {/*<h2 className="font-serif mt-6 mb-2">Structure</h2>*/}
-                    {/*<ColumnBoard/>*/}
                 </section>
                 <DividerComp></DividerComp>
                 <section id={"problem2"} className={"mx-10 font-serif"}>
