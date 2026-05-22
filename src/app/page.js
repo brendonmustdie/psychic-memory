@@ -49,7 +49,7 @@ export default function Home() {
     const projects = [
         {
             image: [
-                "/images/sqare/SQARE_cover.png",
+                "/images/SQARE/SQARE_cover.png",
             ],
             title: "Sqare",
             description: "A redesign of the SQARE application for Intelligent Elephant",
