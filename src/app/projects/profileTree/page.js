@@ -612,11 +612,11 @@ export default function Page() {
                             chances of a sale.
                         </li>
                     </ul>
-                    <div className={"flex flex-row"}>
+                    <div className={"md:flex md:flex-row"}>
                         <div>
                             <img src={"/images/images.jpg"} className={"object-cover h-full"}/>
                         </div>
-                        <div className={"w-1/2 mx-2"}>
+                        <div className={"md:w-1/2 mx-2"}>
                             <div>The design centered around information. So I started there.</div>
                             <div>I went back to all of the information, before I had gotten rid of any of it. And I
                                 sorted the
@@ -653,9 +653,9 @@ export default function Page() {
                     <div className={"text-2xl font-serif my-5"}>Final Screens:</div>
                     <div className={"font-serif"}>Keep scrolling for a close-up look at the final screens.</div>
                 </section>
-                <div className={"mx-10 grid grid-cols-2 gap-2"}>
+                <div className={"mx-10 md:grid md:grid-cols-2 gap-2"}>
                     {images.map((image, index) => (
-                        <img className={"object-cover"} key={index} src={image.image}></img>
+                        <img className={"object-cover my-1"} key={index} src={image.image}></img>
                     ))}
                 </div>
             </div>

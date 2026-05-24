@@ -329,8 +329,8 @@ export default function Page() {
                 <div className={"text-2xl font-serif my-5"}>Wireframes & Mock-ups:</div>
 
 
-                <div className={"grid grid-cols-2 gap-2"}>
-                    <div className={"h-100"}>
+                <div className={"md:grid md:grid-cols-2 gap-2"}>
+                    <div className={"md:h-100"}>
                         <div className={"text-xl my-2"}> Low-fidelity Wireframes:</div>
                         The benefit of low-fidelity wire-frames is the ability to make designs and
                         see the problems
@@ -339,7 +339,7 @@ export default function Page() {
                         drawing
                         tablet.
 
-                        <img className={"h-50 my-4"} src={"/images/SQARE/low-fidelity-project-selection.png"}/>
+                        <img className={"h-50 md:my-4 my-1"} src={"/images/SQARE/low-fidelity-project-selection.png"}/>
                     </div>
                     <div className={""}>
                         <img className={"h-50"} src={"/images/SQARE/low-fidelity-project-analysis.png"}></img>
@@ -366,9 +366,9 @@ export default function Page() {
                 <div className={"text-2xl font-serif my-5"}>Final Screens:</div>
                 <div className={"font-serif"}>Keep scrolling for a close-up look at the final screens.</div>
             </section>
-            <div className={"mx-10 grid grid-cols-2 gap-2"}>
+            <div className={"mx-10 grid md:grid-cols-2 gap-2"}>
                 {images.map((image, index) => (
-                    <img className={"object-cover"} key={index} src={image}></img>
+                    <img className={"object-cover my-1"} key={index} src={image}></img>
                 ))}
             </div>
             <DividerComp></DividerComp>
