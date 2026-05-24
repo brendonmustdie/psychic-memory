@@ -157,7 +157,7 @@ export default function Home() {
                         <h1 className={"font-serif md:text-9xl text-3xl"}> My Work </h1>
 
                         <div className={"mt-10 font-serif"}>Filter through my projects with tags!</div>
-                        <div className="flex flex-wrap gap-2 mx-10">
+                        <div className="flex flex-wrap gap-2 md:mx-10">
                             <div className="flex flex-wrap gap-2 my-5">
                                 {["ALL", ...availableCategories].map((category) => {
                                     const isActive = selectedCategory === category;
@@ -196,10 +196,10 @@ export default function Home() {
                                 })}
                             </div>
                         </div>
-                        <div className="mx-10 text-sm text-gray-500">
+                        <div className="md:mx-10 text-sm text-gray-500">
                             Showing: <span className="font-bold">{selectedCategory}</span>
                         </div>
-                        <div className="mx-10 my-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div className="md:mx-10 my-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             {filteredProjects.map((project) => (
                                 <Link key={project.title} href={project.path}>
                                     <div
