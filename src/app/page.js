@@ -67,44 +67,35 @@ export default function Home() {
             path: "/projects/sqare",
 
         },
-        // {
-        //     image: [
-        //         "/images/nourish/NourishImage.png",
-        //     ],
-        //     title: "Nourish",
-        //     description: "A speculative design project for a fictional client",
-        //     categories: ["UI/UX", "Graphic Design", "Brand Dev"],
-        //     path: "/projects/nourish",
-        //
-        // },
-        // {
-        //     image: [
-        //         "/images/nature_unmatched/Cover.png",
-        //     ],
-        //     title: "Unmatched Deck",
-        //     description: "Custom illustrations for a personalized Unmatched Card Deck",
-        //     categories: ["Illustration", "Digital Art"],
-        //     path: "/projects/unmatcheddeck",
-        //
-        // },
-        // {
-        //     image: [
-        //         "/images/profileTree/Cover.png",
-        //     ],
-        //     title: "Profiletree task",
-        //     description: "I was shortlisted for a job application with ProfileTree, and wasn't hired. But I was proud of my design task - so here it is.  ",
-        //     categories: ["UI/UX",],
-        //     path: "/projects/profileTree",
-        // },
-        // {
-        //     image: [
-        //         "/images/illustrations/cover.png",
-        //     ],
-        //     title: "Exquisi-Corpse Illustrations",
-        //     description: "I made these illustrations for the Exquiste-corpse component on the process page!",
-        //     categories: ["Illustration", "Digital Art",],
-        //     path: "/projects/exquisiteCorpse",
-        // },
+        {
+            image: [
+                "/images/nature_unmatched/Cover.png",
+            ],
+            title: "Unmatched",
+            description: "The design of a custom deck for the boardgame Unmatched",
+            categories: ["Digital Art", "Illustration", "Graphic Design"],
+            path: "/projects/unmatcheddeck",
+
+        },
+        {
+            image: [
+                "/images/nourish/NourishImage.png",
+            ],
+            title: "Nourish",
+            description: "A speculative design project for a fictional client",
+            categories: ["Coming Soon"],
+            path: "/",
+
+        },
+        {
+            image: [
+                "/images/illustrations/cover.png",
+            ],
+            title: "Exquisi-Corpse Illustrations",
+            description: "I made these illustrations for the Exquiste-corpse component in a previous iteration of my portfolio!",
+            categories: ["Coming Soon",],
+            path: "/",
+        },
         // {
         //     image: [
         //         "/images/illustrations/cover.png",
