@@ -77,6 +77,16 @@ export default function Home() {
             path: "/projects/unmatcheddeck",
 
         },
+
+        {
+            image: [
+                "/images/illustrations/cover.png",
+            ],
+            title: "Exquisi-Corpse Illustrations",
+            description: "I made these illustrations for the Exquiste-corpse component in a previous iteration of my portfolio!",
+            categories: ["Digital Art", "Illustration", "Graphic Design"],
+            path: "/projects/exquisiteCorpse",
+        },
         {
             image: [
                 "/images/nourish/NourishImage.png",
@@ -86,15 +96,6 @@ export default function Home() {
             categories: ["Coming Soon"],
             path: "/",
 
-        },
-        {
-            image: [
-                "/images/illustrations/cover.png",
-            ],
-            title: "Exquisi-Corpse Illustrations",
-            description: "I made these illustrations for the Exquiste-corpse component in a previous iteration of my portfolio!",
-            categories: ["Coming Soon",],
-            path: "/",
         },
         // {
         //     image: [

@@ -74,107 +74,21 @@ export default function Process() {
     }, []);
 
     return (
-        <div className={"mx-10"}>
-            <div className={"font-serif text-4xl"}>My Process:</div>
-            <div className={"md:flex md:flex-row"}>
-                <div className="md:w-1/2 w-full">
-                    <ECorpseComp imageArray={heads} index={indices[0]}/>
-                    <ECorpseComp imageArray={body} index={indices[1]}/>
-                    <ECorpseComp imageArray={feet} index={indices[2]}/>
-                    {/*<div className={"w-full text-center text-gray-400"}>Psst...I drew this. Check it on the project*/}
-                    {/*    page*/}
-                    {/*</div>*/}
-                </div>
-                <div className={"m-4 md:w-1/2"}>
-                    <div>
-                        <div className={"font-serif"}> Step 1:</div>
-                        <div className={"font-handwritten text-xl"}>Define the Project's Identity:</div>
-                        <div className={"font-serif"}>
-                            I like to create a character to represent the project. I can imagine setting up an interview
-                            with them. Asking them questions. Everything I make is guided by this persona.
-                            <p className={"my-2"}> Sometimes this persona shifts over time, and sometimes it stays
-                                consistent. If the project is a redesign this step can take a long time; Looking at
-                                other
-                                things the brand has made or put out, reading through their copy. Anything and
-                                everything I
-                                can to get to know the project as a person.
-                            </p>
-                        </div>
-                    </div>
-                    <div className={"my-10"}>
-                        <div className={"font-serif"}> Step 2:</div>
-                        <div className={"font-handwritten text-xl"}>Set the mood:</div>
-                        <div className={"font-serif"}>
-                            <p className={""}>
-                                I use my project's persona to build a collage or moodboard that sets the tone of the
-                                project. I like to imagine this board as the guide for aesthetic decision.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div className={"m-4 md:flex md:flex-row gap-4"}>
-                <div>
-                    <div className={"font-serif"}> Step 3:</div>
-                    <div className={"font-handwritten text-xl"}>Brush in the Major Aesthetics:</div>
-                    <div className={"font-serif"}>
-                        If the brand is established and not being redesigned, this can be skipped. But using the collage
-                        and moodboard and decide major concepts:
-                        <ul className={"mx-4"}>
-                            <li className={"flex flex-row gap-2"}>{club}Overall Colour palette</li>
-                            <li className={"flex flex-row gap-2"}>{heart}Sharp or rounded corners</li>
-                            <li className={"flex flex-row gap-2"}>{spade}The font combinations</li>
-                            <li className={"flex flex-row gap-2"}>{diamond}Major iconography</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div className={"font-serif my-4 md:my-0"}> Step 4:</div>
-                    <div className={"font-handwritten text-xl"}>Create a shopping list:</div>
-                    <div className={"font-serif"}>
-                        What do we need? What do we want? What's important? What can stay - what must go? This is a long
-                        laundry list of all of that.
-                        <div className={"my-2"}> More importantly: what's the purpose? Do we need to direct users to a
-                            dales team? Do we need to give them information? What's the aim?</div>
-                    </div>
-                </div>
-            </div>
-
+        <div className={"md:flex md:flex-row container mx-auto my-4"}>
             <div>
-                <div className={"font-serif "}> Steps 5, 6 and 7:</div>
-                <div className={"font-handwritten text-2xl"}>The Design Loop:</div>
-                <div className={"font-serif w-full text-center"}>This is a common design philosophy in the game's
-                    industry. The idea is to make something small, fast, and test as fast as possible. Every iteration
-                    is a small change.
-                </div>
-                <div className={"font-serif md:grid md:grid-cols-2 md:gap-10"}>
-                    <div>
-
-                        <div className={"font-handwritten text-xl mt-3"}>Rapid Prototype:</div>
-                        <div>
-                            Game Designers make tiny prototypes with the intention of testing. Traditional artists draw
-                            thumbnails to test composition. Knitters knit small blocks to
-                            determine their gauge. UI/UX Designers call this wireframing.
-                        </div>
-                    </div>
-                    <div>
-                        <div className={"font-handwritten text-xl mt-3"}>Test and Iterate Loop:</div>
-                        <div>
-                            This is the loop that makes me the strongest designer I can be. Small changes at every step
-                            to get me to the best option.
-                        </div>
-                    </div>
-
-                </div>
+                <h2 className={"font-handwritten text-xl mx-2"}>Exquisite Corpse Component:</h2>
+                <p className={"font-serif mx-2"}>I had a vision of this component which I hoped to use to describe my
+                    creative process. Months down
+                    the line - it didn't work for me anymore. But I think the illustrations are just too cute not to
+                    include in my portfolio. Here's a look at the component itself!</p>
             </div>
-            <div className={"my-4"}>
-                <div className={"font-serif"}> Step 8:</div>
-                <div className={"font-handwritten text-xl"}>The Final Step:</div>
-                <div className={"font-serif"}>
-                    Finally, we can start to build the design in figma. Mobile Designs always get built first - because
-                    development-conscious design has to take the idea of responsive development into their build.
-                </div>
+            <div className="md:w-1/2">
+                <ECorpseComp imageArray={heads} index={indices[0]}/>
+                <ECorpseComp imageArray={body} index={indices[1]}/>
+                <ECorpseComp imageArray={feet} index={indices[2]}/>
+                {/*<div className={"w-full text-center text-gray-400"}>Psst...I drew this. Check it on the project*/}
+                {/*    page*/}
+                {/*</div>*/}
             </div>
         </div>
 

@@ -7,16 +7,31 @@ import FooterComp from "@/app/components/FooterComp";
 import GalleryComp from "@/app/components/GalleryComp";
 import {useState} from "react";
 import SlidesComp from "@/app/components/SlidesComp";
-
+import Process from "@/app/components/Process.jsx";
 
 export default function Page() {
 
-    const profileTree = [
-        {image: "/images/illustrations/apple.png"},
-        {image: "/images/illustrations/chesspiece.png"},
-        {image: "/images/illustrations/frog.png"},
-        {image: "/images/illustrations/ladybug.png"},
-        {image: "/images/illustrations/russiandoll.png"},
+    const illustrations = [
+        {
+            image: "/images/illustrations/apple.png",
+            title: "Apple"
+        },
+        {
+            image: "/images/illustrations/chesspiece.png",
+            title: "Chesspiece"
+        },
+        {
+            image: "/images/illustrations/frog.png",
+            title: "Frog"
+        },
+        {
+            image: "/images/illustrations/ladybug.png",
+            title: "Ladybug"
+        },
+        {
+            image: "/images/illustrations/russiandoll.png",
+            title: "Russiandoll"
+        },
     ]
 
     return (
@@ -45,8 +60,54 @@ export default function Page() {
                     />
                 }
             />
-            <div className={"w-full text-center text-2xl font-handwritten mt-10"}> Design task</div>
-            <GalleryComp images={profileTree}></GalleryComp>
+            <Process></Process>
+            <div className={"font-serif"}>But here's a look at the actual illustrations...</div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+                {illustrations.map((illustration) => (
+                    <div
+                        key={illustration.title}
+                        className="relative group overflow-hidden"
+                    >
+                        <img
+                            src={illustration.image}
+                            alt={illustration.description}
+                            className="w-full block"
+                        />
+
+                        {/* Mobile text */}
+                        <div className="md:hidden p-3 bg-white text-black">
+                            <h3 className="text-lg font-bold mb-1">
+                                {illustration.title}
+                            </h3>
+                            <p className="text-sm">
+                                {illustration.description}
+                            </p>
+                        </div>
+
+                        {/* Desktop overlay */}
+                        <div
+                            className="
+                    hidden md:flex
+                    absolute inset-0
+                    bg-black/80
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity duration-300
+                    flex-col justify-center items-center
+                    text-white p-4 text-center
+                "
+                        >
+                            <h3 className="text-lg font-bold mb-2">
+                                {illustration.title}
+                            </h3>
+
+                            <p className="text-sm">
+                                {illustration.description}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
             <FooterComp></FooterComp>
         </main>
     );
