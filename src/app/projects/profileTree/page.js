@@ -318,20 +318,28 @@ export default function Page() {
                         <div className={"font-bold text-2xl my-2"}>Table of Contents</div>
                         <div className={"mx-10 my-2 text-xl"}>
                             <ul>
-                                <li className={"my-2"}><Link href={"#context"}>Context</Link></li>
-                                <li className={"my-2"}><Link href={"#research"}>
+                                <li className={"my-2"}><Link className={"hover:text-green-500"}
+                                                             href={"#context"}>Context</Link></li>
+                                <li className={"my-2"}><Link className={"hover:text-green-500"} href={"#research"}>
                                     Research: ProfileTree's SEO Page
                                 </Link></li>
-                                <li className={"my-2"}><Link href={"#problem"}>The Problem.</Link></li>
-                                <li className={"my-2"}><Link href={"#conceptualize"}>Conceptualize</Link></li>
-                                <li className={"my-2"}><Link href={"#problem2"}>The Problem, Part 2: Electric
+                                <li className={"my-2"}><Link className={"hover:text-green-500"} href={"#problem"}>The
+                                    Problem.</Link></li>
+                                <li className={"my-2"}><Link className={"hover:text-green-500"}
+                                                             href={"#conceptualize"}>Conceptualize</Link></li>
+                                <li className={"my-2"}><Link className={"hover:text-green-500"} href={"#problem2"}>The
+                                    Problem, Part 2: Electric
                                     Boogaloo</Link>
                                 </li>
-                                <li className={"my-2"}><Link href={"#conceptualize2"}>Conceptualize (From
+                                <li className={"my-2"}><Link className={"hover:text-green-500"}
+                                                             href={"#conceptualize2"}>Conceptualize (From
                                     Scratch)</Link>
                                 </li>
-                                <li className={"my-2"}><Link href={"#wireframes"}>Wireframes & Mock-ups</Link></li>
-                                <li className={"my-2"}> The Final Product</li>
+                                <li className={"my-2"}><Link className={"hover:text-green-500"} href={"#wireframes"}>Wireframes
+                                    & Mock-ups</Link></li>
+                                <li className={"my-2"}><Link className={"hover:text-green-500"} href={"#final-product"}>The
+                                    Final Product</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
