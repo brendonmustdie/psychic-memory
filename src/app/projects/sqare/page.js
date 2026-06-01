@@ -121,13 +121,17 @@ export default function Page() {
                     <div className={"font-bold text-2xl my-2"}>Table of Contents</div>
                     <div className={"mx-10 my-2 text-xl"}>
                         <ul>
-                            <li className={"my-2"}><Link href={"#research"}>
+                            <li className={"my-2"}><Link className={"hover:text-blue-300"} href={"#research"}>
                                 Research: Identifying the Problem
                             </Link></li>
-                            <li className={"my-2"}><Link href={"#problem"}>The (Main) Problem.</Link></li>
-                            <li className={"my-2"}><Link href={"#conceptualize"}>Conceptualize</Link></li>
-                            <li className={"my-2"}><Link href={"#wireframes"}>Wireframes & Mock-ups</Link></li>
-                            <li className={"my-2"}> The Final Product</li>
+                            <li className={"my-2"}><Link className={"hover:text-blue-300"} href={"#problem"}>The (Main)
+                                Problem.</Link></li>
+                            <li className={"my-2"}><Link className={"hover:text-blue-300"}
+                                                         href={"#conceptualize"}>Conceptualize</Link></li>
+                            <li className={"my-2"}><Link className={"hover:text-blue-300"} href={"#wireframes"}>Wireframes
+                                & Mock-ups</Link></li>
+                            <li className={"my-2"}><Link className={"hover:text-blue-300"} href={"#final-product"}> The
+                                Final Product</Link></li>
                         </ul>
                     </div>
                 </div>
