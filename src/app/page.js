@@ -82,7 +82,7 @@ export default function Home() {
             image: [
                 "/images/illustrations/cover.png",
             ],
-            title: "Exquisi-Corpse Illustrations",
+            title: "Exquisi-Corpse Illustrations,",
             description: "I made these illustrations for the Exquiste-corpse component in a previous iteration of my portfolio!",
             categories: ["Digital Art", "Illustration", "Graphic Design"],
             path: "/projects/exquisiteCorpse",
