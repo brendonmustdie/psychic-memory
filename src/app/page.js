@@ -77,32 +77,26 @@ export default function Home() {
 
     const categories = {
         "UI/UX": {
-            color: "#1E3A8A",
-            hover: "#2A4DD0", // brighter spade blue
+            color: "#8E6906",
             text: "#E0E7FF"
         },
         "Brand Dev": {
-            color: "#DC2626",
+            color: "#47114F",
             hover: "#EF4444", // brighter heart red
             text: "#FFE4E6"
         },
-        "Graphic Design": {
-            color: "#F59E0B",
-            hover: "#FBBF24", // brighter gold
-            text: "#1A1A1A"
-        },
         "Illustration": {
-            color: "#15803D",
+            color: "#243442",
             hover: "#22C55E", // brighter club green
             text: "#DCFCE7"
         },
         "Digital Art": {
-            color: "#A855F7",
+            color: "#6A1515",
             hover: "#C084FC", // brighter joker purple
             text: "#F5F3FF"
         },
-        "Coming Soon": {
-            color: "#6B7280",
+        "3D Model": {
+            color: "#08321E",
             hover: "#9CA3AF", // lighter slate
             text: "#F9FAFB"
         },
@@ -137,7 +131,7 @@ export default function Home() {
             ],
             title: "Unmatched",
             description: "The design of a custom deck for the boardgame Unmatched",
-            categories: ["Digital Art", "Illustration", "Graphic Design"],
+            categories: ["Digital Art", "Illustration",],
             path: "/projects/unmatcheddeck",
 
         },
@@ -148,9 +142,19 @@ export default function Home() {
             ],
             title: "Exquisite Corpse",
             description: "I made these illustrations for the Exquiste-corpse component in a previous iteration of my portfolio!",
-            categories: ["Digital Art", "Illustration", "Graphic Design"],
+            categories: ["Digital Art", "Illustration",],
             path: "/projects/exquisiteCorpse",
         },
+        {
+            image: [
+                "/images/fishFactoryModels/fishFactoryCover.png",
+            ],
+            title: "Factory Models",
+            description: "I made these models for a passion project of Luke Eales",
+            categories: ["3D Model"],
+            path: "/projects/fishFactory",
+        },
+
         // {
         //     image: [
         //         "/images/nourish/1.png",
