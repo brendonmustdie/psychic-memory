@@ -155,16 +155,16 @@ export default function Home() {
             path: "/projects/fishFactory",
         },
 
-        // {
-        //     image: [
-        //         "/images/nourish/1.png",
-        //     ],
-        //     title: "Nourish",
-        //     description: "A speculative design project for a fictional client",
-        //     categories: ["Coming Soon"],
-        //     path: "/",
-        //
-        // },
+        {
+            image: [
+                "/images/nourish/1.png",
+            ],
+            title: "Nourish",
+            description: "A speculative design project for a fictional client",
+            categories: ["UI/UX", "Brand Dev"],
+            path: "/projects/nourish",
+
+        },
         // {
         //     image: [
         //         "/images/illustrations/cover.png",

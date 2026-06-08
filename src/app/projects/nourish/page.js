@@ -187,6 +187,11 @@ export default function Page() {
                 </button>
             </div>
             <DividerComp></DividerComp>
+            <div className={"w-full bg-yellow-400 text-center text-black p-2 font-bold font-serif"}> Please note that
+                                                                                                     this page is
+                                                                                                     under
+                                                                                                     construction!
+            </div>
             <div className={"w-full text-center text-2xl font-handwritten mt-10"}> {title} </div>
             {slides ?
                 <SlidesComp images={galleryArray}></SlidesComp> :
