@@ -1,12 +1,79 @@
 "use client";
-import Link from "next/link";
 import FooterComp from "@/app/components/FooterComp";
 import DividerComp from "@/app/components/DividerComp";
 import {useState} from "react";
+import {useMemo} from "react";
+import Image from "next/image";
+import FlipCard from "@/app/components/FlipCard.jsx";
+import PokerChipComp from "@/app/components/PokerChipComp.jsx";
 
 export default function Home() {
 
     const [selectedCategory, setSelectedCategory] = useState("ALL");
+
+
+    const suits = {
+        spade: (
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#5C5C5C"
+                className="bi bi-suit-spade-fill"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    d="M7.184 11.246A3.5 3.5 0 0 1 1 9c0-1.602 1.14-2.633 2.66-4.008C4.986 3.792 6.602 2.33 8 0c1.398 2.33 3.014 3.792 4.34 4.992C13.86 6.367 15 7.398 15 9a3.5 3.5 0 0 1-6.184 2.246 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907"/>
+            </svg>
+        ),
+
+        diamond: (
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#DC2626"
+                className="bi bi-suit-diamond-fill"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    d="M2.45 7.4 7.2 1.067a1 1 0 0 1 1.6 0L13.55 7.4a1 1 0 0 1 0 1.2L8.8 14.933a1 1 0 0 1-1.6 0L2.45 8.6a1 1 0 0 1 0-1.2"/>
+            </svg>
+        ),
+
+        club: (
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#5C5C5C"
+                className="bi bi-suit-club-fill"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    d="M11.5 12.5a3.5 3.5 0 0 1-2.684-1.254 20 20 0 0 0 1.582 2.907c.231.35-.02.847-.438.847H6.04c-.419 0-.67-.497-.438-.847a20 20 0 0 0 1.582-2.907 3.5 3.5 0 1 1-2.538-5.743 3.5 3.5 0 1 1 6.708 0A3.5 3.5 0 1 1 11.5 12.5"/>
+            </svg>
+        ),
+
+        heart: (
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#DC2626"
+                className="bi bi-suit-heart-fill"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1"/>
+            </svg>
+        ),
+    };
+
+    const values = [
+        "A", "K", "Q", "J", "10"
+    ]
+
 
     const categories = {
         "UI/UX": {
@@ -39,27 +106,24 @@ export default function Home() {
             hover: "#9CA3AF", // lighter slate
             text: "#F9FAFB"
         },
-        "Speculative": {
-            color: "#0F172A",
-            hover: "#1E293B", // slightly lighter navy
-            text: "#93C5FD"
-        }
     };
+
 
     const projects = [
         {
             image: [
-                "/images/profileTree/Cover.png",
+                "/images/profileTree/6.png",
             ],
             title: "ProfileTree",
             description: "A redesign of the SQARE application for Intelligent Elephant",
-            categories: ["UI/UX", "Speculative"],
+            categories: ["UI/UX"],
             path: "/projects/profileTree",
+            suit: "text",
 
         },
         {
             image: [
-                "/images/SQARE/SQARE_cover.png",
+                "/images/SQARE/2.png",
             ],
             title: "Sqare",
             description: "A redesign of the SQARE application for Intelligent Elephant",
@@ -69,7 +133,7 @@ export default function Home() {
         },
         {
             image: [
-                "/images/nature_unmatched/Cover.png",
+                "/images/nature_unmatched/5.png",
             ],
             title: "Unmatched",
             description: "The design of a custom deck for the boardgame Unmatched",
@@ -80,23 +144,23 @@ export default function Home() {
 
         {
             image: [
-                "/images/illustrations/cover.png",
+                "/images/illustrations/4.png",
             ],
-            title: "Exquisi-Corpse Illustrations,",
+            title: "Exquisite Corpse",
             description: "I made these illustrations for the Exquiste-corpse component in a previous iteration of my portfolio!",
             categories: ["Digital Art", "Illustration", "Graphic Design"],
             path: "/projects/exquisiteCorpse",
         },
-        {
-            image: [
-                "/images/nourish/NourishImage.png",
-            ],
-            title: "Nourish",
-            description: "A speculative design project for a fictional client",
-            categories: ["Coming Soon"],
-            path: "/",
-
-        },
+        // {
+        //     image: [
+        //         "/images/nourish/1.png",
+        //     ],
+        //     title: "Nourish",
+        //     description: "A speculative design project for a fictional client",
+        //     categories: ["Coming Soon"],
+        //     path: "/",
+        //
+        // },
         // {
         //     image: [
         //         "/images/illustrations/cover.png",
@@ -125,6 +189,19 @@ export default function Home() {
     const availableCategories = Object.keys(categories).filter(
         (cat) => categoryCounts[cat] > 0
     );
+
+
+    const decoratedProjects = useMemo(() => {
+        return filteredProjects.map((project) => {
+
+            return {
+                ...project,
+
+            };
+        });
+    }, [filteredProjects]);
+
+
     return (
         <main>
             <div className="">
@@ -143,7 +220,10 @@ export default function Home() {
 
 
                 <div className={""}>
-
+                    <div className={"md:hidden bg-yellow-400 w-full flex-row flex content-center justify-center p-2"}>
+                        <div className={"text-black font-bold"}>Warning!</div>
+                        <div className={"mx-2 text-black"}> This site is better on desktop.</div>
+                    </div>
                     <div className={"mx-10 my-5"}>
                         <h1 className={"font-handwritten md:-mb-6 text-lg"}> The main attraction: </h1>
                         <h1 className={"font-serif md:text-9xl text-3xl"}> My Work </h1>
@@ -191,59 +271,38 @@ export default function Home() {
                         <div className="md:mx-10 text-sm text-gray-500">
                             Showing: <span className="font-bold">{selectedCategory}</span>
                         </div>
-                        <div className="md:mx-10 my-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                            {filteredProjects.map((project) => (
-                                <Link key={project.title} href={project.path}>
-                                    <div
-                                        className="rounded overflow-hidden shadow-md hover:shadow-xl hover:scale-[1.02] transition duration-300 cursor-pointer">
-
-                                        <img
-                                            src={project.image}
-                                            className="w-full h-48 object-cover"
-                                        />
-
-                                        <div className="p-3 bg-white text-black">
-
-                                            <div className="flex flex-wrap gap-1 mb-2">
-                                                {project.categories.map((category) => {
-                                                    const cat = categories[category] || {color: "#ccc", text: "#000"};
-
-                                                    return (
-                                                        <div
-                                                            key={category}
-                                                            style={{
-                                                                backgroundColor: cat.color,
-                                                                color: cat.text
-                                                            }}
-                                                            className="px-2 py-1 rounded text-xs"
-                                                        >
-                                                            {category}
-                                                        </div>
-                                                    );
-                                                })}
-                                            </div>
-
-                                            <div className="flex items-center gap-2 font-handwritten">
-                                                {project.icon}
-                                                {project.title}
-                                            </div>
-
-                                            <div className="font-serif text-sm">
-                                                {project.description}
-                                            </div>
-
+                        <div className="md:mx-10 my-5 gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+                            {decoratedProjects.map((project, index) => {
+                                const suitValues = Object.values(suits);
+                                const randomSuit =
+                                    suitValues[Math.floor(Math.random() * suitValues.length)];
+                                const randomValue = values[Math.floor(Math.random() * values.length)];
+                                return (
+                                    <div key={index}>
+                                        <div className={"font-bold font-handwritten"}>{project.title}</div>
+                                        <FlipCard link={project.path} image={project.image[0]} title={project.title}
+                                                  description={project.description} suit={randomSuit}
+                                                  value={randomValue}></FlipCard>
+                                        <div className="grid grid-cols-3">
+                                            {project.categories.map((category) => (
+                                                <PokerChipComp
+                                                    key={category}
+                                                    colour={categories[category].color}
+                                                    text={category}
+                                                />
+                                            ))}
                                         </div>
                                     </div>
-                                </Link>
-                            ))}
-                        </div>
+                                )
+                            })}
 
+
+                        </div>
 
                     </div>
                     <DividerComp></DividerComp>
 
                 </div>
-
             </div>
             <FooterComp></FooterComp>
         </main>
